@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name= "viewport" content='width=device-width,initial-scale=1'>
+    <link rel="shortcut icon" href="http://www.eduhomestay.com/assets/img/logo.png">
+    <title>EduHome/寄宿之家（学校详情）</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="flexslider/flexslider.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/school_desc.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./caroursel/carousel.js"></script>
+    <script src="./caroursel/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body class="bg_color">
+  <!--menu bar start-->
+  <div id="navbar-top">
+    <nav class="navbar navbar-default navbar-static affix-top" role="navigation">
+        <a class="logo fl" href="./index.html">
+            <img src="./assets/img/logo.png">
+            <p class="logotitle"><span class="tz">Edu</span><span class="tr">Home</span></p>
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right longin-out">
+            <li >
+              <a href="./order.html">我的行程</a>
+            </li>
+            <li>
+            <div class="dropmenu user-dropmenu">
+              <button class="btn login_btn" id="loginBtn" >注册</button>
+            </div>
+            </li>  
+            <li>
+             <button class="btn login_btn" id="landBtn">登录</button>
+            </li>
+          </ul>
+          <ul class="fr longin-show navbar-nav">
+            <li>
+              <a href="" class="icon-btn">
+                <i class="icon phone-icon"></i>
+                <span class="hidden">手机端</span>
+              </a>
+            </li>
+            <li>
+              <div class="dropmenu user-dropmenu land">
+              <!-- 登录后显示头像及下拉菜单 -->
+                <div class="land-user">
+                  <img class="user-photo" src="./assets/img/photo.png">
+                </div>
+                <div class="dropitem-land">
+                  <a href='./order.html'>
+                    <div>
+                      我的行程
+                    </div>
+                  </a>                               
+                  <a href='./collecthost.html'>
+                    <div>
+                      我的收藏
+                    </div>
+                  </a>
+                  <a href="./info.html">
+                    <div>
+                    个人中心
+                    </div>
+                  <a href="">
+                    <div>
+                      退出
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li> 
+          </ul>
+          <div>
+          <div class="dropmenu hostwrap">
+            <a href="./host_info.html">
+              <span class="hoster">成为房东</span>
+            </a> 
+            <div class="dropitem">
+              <a href="./rooms.html">
+                <div>
+                  我的房源
+                </div>
+              </a>
+              <a href="./host_stepone.html">
+                <div>
+                  发布新房源
+                </div>
+              </a>
+              <a href="./scheduled.html">
+                <div>
+                  收到的预订
+                </div>
+              </a>              
+              <a href="./host_info.html">
+                <div>
+                  编辑个人资料
+                </div>
+              </a>                            
+              <a href="./receipt.html">
+                <div>
+                  房东中心
+                </div>
+              </a>                            
+              <a href="./host_stepone.html">
+                <div>
+                  退出登录
+                </div>
+              </a>
+            </div> 
+          </div>
+
+          </div>
+    </nav>
+  </div>
+  <!--menu bar end-->
+
+  <div class="school_desc_top">
+    <div class="school_desc_banner">
+      <div class="z"></div>
+      <img>
+      <div class="place">
+        <p>哈克学校</p> 
+        <p>The Harker School</p>     
+      </div>
+    </div>
+    <div class="subnav" id="subnav">
+      <div class="page-container container">
+        <ul class="subnav-list clearfix">
+          <li>
+            <a href="#school" class="subnav-item">学校详情</a>
+          </li>                  
+          <li>
+            <a href="#picave" class="subnav-item" >图片及视频</a>
+          </li>
+          <li>
+            <a href="#req" class="subnav-item">入学要求</a>
+          </li>           
+          <li>
+            <a href="#location" class="subnav-item">位置</a>
+          </li> 
+          <li>
+            <a href="#rev" class="subnav-item" >评价/咨询</a>
+          </li>         
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <p class="book clearfix">
+        <a class="fl joinbtn"  >加入行程<i class="animated ">加入</i></a>
+        <a class="fl" href="./order.html">立即支付</a>
+      </p>
+      <div class="hostinfo clearfix">
+        <h4>哈克学校The Harker School</h4>
+        <div class="people_desc fl">
+          <a class="people_cirle">
+            <img src="./assets/img/school/harker01.png" alt=""/>
+          </a>
+          <p class="peop_name">500 Saratoga Ave, San Jose, CA 95129-0951</p>
+          <span>
+            <i class="icon_star"></i>
+            <i class="icon_star"></i>
+            <i class="icon_star"></i>
+            <i class="icon_star"></i>
+            <i class="icon_star icon_star_half"></i>
+          </span>
+          <p class="price"> $41,432 </p>
+        </div>
+      </div>
+      <div class="barfoot clearfix">
+        <div>
+          <h5>Response Rate</h5>
+          <p class="num">100%</p>
+        </div>        
+        <div>
+          <h5>Response Time</h5>
+          <p>Within a few hours</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="school_desc_middle">
+    <div class="container">
+      <h3 class="school_intro_tit roomer_intro_tit2  target-fix" id="school">关于此学校</h3>
+      <p class="school_desc_intro" >
+        哈克学校成立于1893年，在硅谷中心地带拥有三个美丽的校区，为幼儿园至十二年级的男女学生提供独立的教学课程。哈克是全国顶尖的预科学校，也是加州同类学校中最大的，高年级毕业生比全国最知名的大学录取。为激发学生的最大潜能，我们实行小班教学，各年级都拥有学生表现排位体系，融合技术发展水平技术，以平均学分绩点考核学生表现，并许可授予学位。此外，我们还拥有全职的咨询人员和高水平的师资力量。哈克是一个充满活力的集体，尊重学生的个性和多样性，培养学生承担社会职责，成为优秀的世界公民。
+      </p>
+      <!-- 图片及视频 -->
+      <div class="picave target-fix" id="picave">
+        <!-- 图片 -->
+      <div class="flexslider">
+        <ul class="slides"> 
+          <li>
+            <img class='img1'  />
+          </li>
+          <li>
+            <img class='img2' />
+          </li>
+          <li>
+            <video src="./assets/vedio/movie.mp4" class="contener" id="video">
+              Your browser does not support the video tag.
+            </video> 
+            <div class="playbtn" onclick="playPause()">
+              <img src="./assets/img/play.jpg">
+            </div>            
+          </li>
+        </ul>
+        <span class="pre"></span>
+      </div>  
+      </div>
+
+      <div class="survey  col-md-6">
+        <h6 class="detail">学校概况</h6>
+        <!-- 学校官网-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">学校官网</span>
+          <span class="fl">
+            http://www.harker.org/
+          </span>
+        </div>
+        <!-- 建校时间 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">建校时间</span>
+          <span class="fl">
+          1893
+          </span>
+        </div>       
+        <!-- 学校类型-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">学校类型</span>
+          <span class="fl">
+          男女混校
+          </span>
+        </div>
+        <!-- 年级 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">年级</span>
+          <span class="fl">
+          K-12年级
+          </span>
+        </div>   
+        <!-- 国际学生比例 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">国际学生比例</span>
+          <span class="fl">
+          1%
+          </span>
+        </div>    
+        <!-- 住宿生比例 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">住宿生比例</span>
+          <span class="fl">
+            /
+          </span>
+        </div>  
+        <!-- 地址 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">地址</span>
+          <span class="fl">
+            500 Saratoga Ave, San Jose, CA 95129-0951
+          </span>
+        </div>      
+        <!-- 所在州 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">所在州</span>
+          <span class="fl">
+            加利福尼亚州
+            </span>
+        </div>      
+        <!-- 在校人数 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">在校人数</span>
+          <span class="fl">
+            1722
+          </span>
+        </div>      
+        <!-- 面积 -->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">面积</span>
+          <span class="fl">
+            /
+            </span>
+          </div>      
+        <!-- 校友捐赠 -->
+        <div class="school_intro clearfix">
+            <span class="fl school_tit">校友捐赠</span>
+            <span class="fl">
+             /
+            </span>
+        </div>      
+        <!-- 综合申请录取率 -->
+        <div class="school_intro clearfix">
+            <span class="fl school_tit">综合申请录取率</span>
+            <span class="fl">
+            /
+            </span>
+        </div>      
+        <!-- 教育认证和会员 -->
+        <div class="school_intro clearfix">
+            <span class="fl school_tit">教育认证和会员</span>
+            <span class="fl">
+              NEASC
+            </span>
+        </div>        
+      </div>
+      <div class="col-md-6">
+        <h6 class="detail">年级人数组成</h6>  
+        <!-- 9年级-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">9年级</span>
+          <span class="fl">
+            233人
+          </span>
+        </div>                
+        <!-- 10年级-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">10年级</span>
+          <span class="fl">
+            280人
+          </span>
+        </div> 
+        <!-- 11年级-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">11年级</span>
+          <span class="fl">
+            288人
+          </span>
+        </div> 
+        <!-- 12年级-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">12年级</span>
+          <span class="fl">
+            337人
+          </span>
+        </div> 
+        <h6 class="detail">学费</h6>
+        <!-- 寄宿-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">寄宿</span>
+          <span class="fl">
+            $52,100
+          </span>
+        </div>        
+        <!-- 走读-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">走读</span>
+          <span class="fl">
+            $39,100
+          </span>
+        </div>         
+        <!-- 奖学金比例-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">奖学金比例</span>
+          <span class="fl">
+            46.3%
+          </span>
+        </div>  
+        <h6 class="detail">学校住宿</h6> 
+        <!-- 宿舍数量-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">宿舍数量</span>
+          <span class="fl">
+            42个(20个女生宿舍，22个男生宿舍)
+          </span>
+        </div>        
+        <!-- 着装要求-->
+        <div class="school_intro clearfix">
+          <span class="fl school_tit">着装要求</span>
+          <span class="fl">
+            Casual
+          </span>
+        </div>  
+        <h6 class="detail"> AP课程</h6>
+        <p>
+          AP注释: 安多佛菲利普斯学校教授的很多课程都已经达到和超过了大学先修课程的水平，有的甚至达到了大学二年级课程的学业水平和难度。一些课程编码为300-，400-的课程和所有编码为500-的课程都达到和超过了大学先修课程的水平。编码600-的课程等同于大学二年级课程的学业水平和难度。了解课程的详细信息参见 <a href="">http://www.andover.edu/Academics/Documents/CourseofStudy2014_2015WEB.pdf</a> 
+        </p> 
+        <p>了解更多:<a href=""> www.andover.edu/Academics/Documents...</a> </p> 
+      </div>
+      <div class="rank col-md-6">
+        <h6 class="detail">指标排名</h6>
+        <div class="col-md-2 col-xs-2">
+          <div class="block">
+            <p>167名</p>
+            <div class="bc tuition"></div>
+            <p class="rank_tit">学费</p>         
+            <p>$52,100</p> 
+          </div>
+        </div>        
+        <div class="col-md-2 col-xs-2 ">
+          <div class="block">
+            <p>49名</p>
+            <div class="bc area"></div>
+            <p class="rank_tit">校园面积</p>         
+            <p>500英亩</p> 
+          </div>
+        </div>        
+        <div class="col-md-2 col-xs-3 ">
+          <div class="block">
+            <p>7名</p>
+            <div class="bc stu_num"></div>
+            <p class="rank_tit">在校学生数</p>         
+            <p>1138名</p> 
+          </div>
+        </div>        
+        <div class="col-md-2 col-xs-3 ">
+          <div class="block">
+            <p>255名</p>
+            <div class="bc glo_pro"></div>
+            <p class="rank_tit">国际学生比例</p>         
+            <p>9%</p> 
+          </div>
+        </div>        
+        <div class="col-md-2 col-xs-2">
+          <div class="block">
+            <p>85名</p>
+            <div class="bc glo_pro"></div>
+            <p class="rank_tit">师生比例</p>         
+            <p>1:5</p> 
+          </div>
+        </div>
+      </div>
+    </div><!-- container-->
+    <div class="container target-fix" id='req'>
+      <h3>入学要求</h3>
+    </div>
+    <!-- 地图 -->
+    <div class="gpsMap clearfix row targer-fix"  id="location">
+      <div class="mmap" id="map">
+      </div>
+      <div class="strmap" id="pano">
+      </div> 
+    </div>
+ <div  id="rev" class="target-fix">
+      <nav class="container">
+        <span value='评论'>评论</span><span value='咨询'>咨询</span>       
+      </nav>
+
+    <!--评论-->
+      <div class="camp_remark" id="evaluate">
+      <div class="container">
+          <div class="remark_tit">
+            <b>7条评价</b>
+            <span>
+              <i class="icon_starno icon_star"></i>
+              <i class="icon_starno icon_star"></i>
+              <i class="icon_starno icon_star"></i>
+              <i class="icon_starno icon_star"></i>
+              <i class=icon_starno icon_star"></i>
+            </span>
+            <span class="scale_icon"></span>
+            <div class="campRemark_child none">
+              <p><b>5星</b><span class="prog prog_org"></span></p>
+              <p><b>4星</b><span class="prog prog_grey"></span></p>
+              <p><b>3星</b><span class="prog prog_grey"></span></p>
+              <p><b>2星</b><span class="prog prog_grey"></span></p>
+              <p><b>1星</b><span class="prog prog_grey"></span></p>
+            </div>
+          </div>
+          <button class="btn btn-eva">添加评价</button>
+          <div class="eva-box clearfix">
+            <div class="camp_intro clearfix">
+              <div class="fl camp">
+              <dl class="camp_list camp_list2 clearfix">
+                <dd><strong>准确性</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>位置</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>沟通交流</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>入住</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>清洁度</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>性价比</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+              </dl>
+              </div>
+            <label class="name">
+            姓名:
+            <input type="text">              
+            </label>
+            <textarea placeholder="输入评论"></textarea>
+            <button class="btn btn-add">确认添加评价</button>
+            </div>            
+          </div>
+          <!-- 概述-->
+          <div class="camp_intro clearfix">
+            <span class="fl camp_tit">概述</span>
+            <div class="fl camp">
+              <dl class="camp_list camp_list2 clearfix">
+                <dd><strong>准确性</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>位置</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>沟通交流</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>入住</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>清洁度</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>性价比</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <!--  评论内容-->
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+                    <span class="remark_img">
+                        <img src="./assets/img/camp/p1.jpg" alt=""/>
+                    </span>
+                    <p>刘蕾</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                非常有趣的营地，学到了很多东西，英语也提升了很多感觉
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">DECEMBER 2016</span>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/camp/p2.jpg" alt=""/>
+              </span>
+              <p>Frank</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                交到了很多外国朋友，非常开心
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">NOVEMBER 2016</span>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/p2.jpg" alt=""/>
+              </span>
+              <p>Gena</p>
+            </div>
+            <div class="remark_right fr">
+              <p>位置在CITY里面，很好找，交通也很方便的营地.</p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">MAY 2016</span>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl"></div>
+            <div class="remark_right fr"  style="border:none;">
+              <p>该学校收到了222条评价。</p>
+              <a class="more_remark">查看其它评价</a>
+            </div>
+          </div>
+      </div>
+      </div>
+    <!-- 咨询 -->
+      <div class="camp_remark" id="refer">
+      <div class="container">
+          <div class="remark_tit">
+            <b>3条咨询</b>
+          </div>
+          <button class="btn btn-refer">添加咨询</button>
+          <div class="refer-box clearfix">
+            <div class="camp_intro clearfix">
+              <label class="name">
+                姓名:
+                <input type="text">              
+              </label>             
+              <label class="phone">
+               联系方式:
+                <input type="text">              
+              </label>
+              <textarea placeholder="输入咨询内容"></textarea>
+              <button class="btn btn-add">确认发送咨询</button>
+            </div>            
+          </div>
+          <!-- 概述-->
+          <div class="camp_intro clearfix">
+          </div>
+          <!--  咨询内容-->
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+                    <span class="remark_img">
+                        <img src="./assets/img/camp/p1.jpg" alt=""/>
+                    </span>
+                    <p>刘蕾</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                非常有趣的营地，学到了很多东西，英语也提升了很多感觉
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">DECEMBER 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Yohei.jpg" alt=""/>
+              </span>
+              <p>Yohei</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                My stay with Max was wonderful so much! He is very friendly person. The room is clean and the location is useful; you can go downtown, hollywood, beachcities.
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">NOVEMBER 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Kevin.jpg" alt=""/>
+              </span>
+              <p>Kevin</p>
+            </div>
+            <div class="remark_right fr">
+              <p>First of all Maksim is a very kind, courteous and helpful person. He really takes care over his guest. So the stay with him was very good. The lodging is very beatiful and comfortable. It was a pleasure to met him. So it was a perfect stay.</p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">MAY 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Ammar.jpg" alt=""/>
+              </span>
+              <p>Ammar</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                It was just an incredible experience! He was a wonderful guy. (:
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">MAY 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl"></div>
+            <div class="remark_right fr"  style="border:none;">
+              <p>该营地收到了120条咨询。</p>
+              <a class="more_remark">查看其它咨询</a>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>    
+  </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 selector ">
+          <select name="" for="currency-selector" data-reactid="0.1" class="language" onchange="window.location.href=this.options[selectedIndex].value">
+              <option value='zh'>中文</option>
+              <option value='en'>English</option>
+          </select>
+          <div class="clearfix"> 
+            <div class="fl">地&nbsp;&nbsp;址：</div>
+            <div class="fl">
+              <p><a href="">成都市高新区天府大道966号九号楼110室</a></p>
+              <p><a href="">北京市东城区银河SOHO D座50618室</a></p>
+            </div>
+          </div>
+          <p>电&nbsp;&nbsp;话：<a>400-8868-032</a></p>
+          <p>美国分公司电话：<a>（+1）626-373-1206</a></p>
+          <p>美国分公司地址：<a>1619 W Garvey Ave. N Suite 207 West Covina, CA 91790</a></p>
+          <p>邮&nbsp;&nbsp;箱：<a>inquiry@eduhomestay.com</a></p>
+        </div>  
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./companyinfo.html">公司信息</a></p>
+          <p><a href="../EduTransfer_环球学生汇.html#contact">联系我们</a></p>
+          <p><a href="./job.html">工作机会</a></p>
+          <p><a href="">微博与微信</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./refund.html">退款政策</a></p>
+          <p><a href="./equity.html">非歧视政策</a></p>
+          <p><a href="./serve_clause.html">服务条款</a></p>
+          <p><a href="./privacy_policy.html">隐私条款</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <img src="./assets/img/erweima.jpg">
+          <p>
+            <a href="">环球智汇成都网络科技有限公司</a>
+          </p>
+        </div>        
+      </div>
+      <div class="nav row col-sm-12 col-md-12 col-lg-12">
+        <ul class="clearfix focus">
+          <li>
+            <a class="qq" href="">
+              <i class="qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="wechat"href="">
+              <i class="wechat"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="wechat" href="">
+              <i  class="weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="fb" href="">
+              <i  class="fb"></i>
+            </a>
+          </li>
+        </ul>
+        <p>
+           版权归环球智汇成都网络科技有限公司所有,违者必究   &nbsp;&nbsp; 蜀ICP备16017815号
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div class="imgdetil">
+    <div class="imgdetil_bg"></div>
+    <img >
+    <span class="close"></span>
+    <a class="pre"><</a>
+    <a class="next">></a>
+  </div>
+</body>
+<script src="flexslider/jquery.flexslider-min.js"></script>
+<script>
+  $(function(){
+  Carousel.init($(".pictureSlider"));
+});
+</script>
+<script>
+    //轮播
+    $(".flexslider").flexslider({
+        animation: "fade",
+        direction: "horizontal",
+        slideshowSpeed: 3000,
+        easing: "swing",
+        slideshow: true,
+        pauseOnHover: false,
+        prevText: "",
+        nextText: ""
+    });
+    // 切换评论与咨询
+    $("#rev nav span").click(function(){
+      $("#rev nav span").css({'font-weight':'300','background-color':'#fff','color':'#ff5a5f','border-top':'1px solid','border-bottom':'1px solid','padding':'10px 30px'});
+      $(this).css({'font-weight':'700','background-color':'#ff5a5f','color':'#fff','border-top':'none','border-bottom':'none','padding':'11px 30px'});
+      var val = $(this).attr("value");
+      if(val == "评论"){
+        $("#evaluate").show();
+        $("#refer").hide();
+      }
+      else if(val == '咨询'){
+        $("#refer").show();
+        $("#evaluate").hide();
+      }
+    })
+    // 添加评价
+    $(function(){
+      $(".btn-eva").click(function(){
+        $(".eva-box").slideToggle();
+      })
+      $(".eva-box .btn-add").click(function(){
+        var eva = $(".eva-box textarea").val();
+        $(".eva-box").slideUp();
+      })
+    })
+    //发送咨询
+    $(function(){
+      $(".btn-refer").click(function(){
+        $(".refer-box").slideToggle();
+      })
+      $(".refer-box .btn-add").click(function(){
+        var eva = $(".refer-box textarea").val();
+        $(".refer-box").slideUp();
+      })
+    })
+    // 置顶后固定
+    $(function(){
+      menuFixed("subnav");
+    })
+
+    function menuFixed(id){
+      var obj = document.getElementById(id);
+      var _getHeight = obj.offsetTop;
+      window.onscroll = function(){
+        changePos(id,_getHeight);
+      }
+    }
+    function changePos(id,height){
+      var obj = document.getElementById(id);
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      var Top = scrollTop + 70;
+      if(Top < height){
+        obj.style.position = 'relative';
+        obj.style.top = '0';
+      }else{
+        obj.style.position = 'fixed';
+        obj.style.top = '72px';
+      }
+    }
+  // 图片查看
+  $(".slides img").click(function(){
+    var index = $(".slides img").index(this);
+    var url = $(this).css("background-image");
+    var src = url.slice(5,-2);
+    $(".imgdetil img").attr("src",src);
+    $(".imgdetil .pre").click(function(){
+      if(index > 0){
+        index = index -1;
+        var imgpre =$(".slides img")[index]; 
+        var srcpre = $(imgpre).css("background-image").slice(5,-2);
+        $(".imgdetil img").attr("src",srcpre);
+      }
+    })    
+    $(".imgdetil .next").click(function(){
+      if(index  < $(".slides img").length-1){
+        index = index +1;
+        var imgnext =$(".slides img")[index]; 
+        var srcnext = $(imgnext).css("background-image").slice(5,-2);
+        $(".imgdetil img").attr("src",srcnext);
+      }
+    })
+    $(".imgdetil_bg").show();
+    $(".imgdetil").show();
+    $(".close,.imgdetil_bg").on('click',function(){
+      $(".imgdetil").hide();      
+    })    
+  })
+// 加入行程
+$(".joinbtn").click(function(){
+  $(".joinbtn i").show().addClass("bounceOutUp");
+})
+</script>
+<script>
+function initialize() {
+  var fenway = {lat: 42.345573, lng: -71.098326};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: fenway,
+    zoom: 14
+  });
+  var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('pano'), {
+        position: fenway,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
+  map.setStreetView(panorama);
+}
+</script>
+<script async defer
+  src="https://www.google.cn/maps/api/js?key=AIzaSyDyAO8hOuxqPdUcgWjofurjpREKN2qEnj8&callback=initialize">
+</script>
+
+</html>

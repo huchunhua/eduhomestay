@@ -1,0 +1,123 @@
+/*服务页，包括监管及保险等*/
+.content{
+	margin-top: 140px;
+}
+.item-wrap{
+	display: flex;
+}
+.item-wrap .img{
+	background-image: url("../img/changer.jpg");
+	width: 320px;
+	height: 280px;
+	padding:0;
+}
+.item-wrap .img.insurance{
+	background-image: url("../img/insurance.jpg")
+}
+.item-wrap .img.changer{
+	background-image: url("../img/changer.jpg")
+}
+.col-md-7{
+	padding-left: 40px;
+	flex:1;
+}
+.price{
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.total{
+	display: none;
+}
+.price span,.total span{
+	font-size: 30px;
+	color: #c350bf;
+}
+input[type='text']{
+	padding-left: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+.total select{
+	width: 101px;
+}
+.buy{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.buy .btn{
+	border: 1px solid #c350bf;
+	color:#c350bf;
+}
+.buy .btn-buy{
+	color: #fff;
+	background-color: #c350bf;
+}.buy .btn-buy:hover{
+	background-color:#d892d6;
+	border-color:#d892d6; 
+}
+.buy .btn-collect:hover{
+	color: #d892d6;
+	border-color: #d892d6;
+}
+.nav-serve{
+	margin-top: 30px;
+	background-color: #e5e5e5;
+}
+.nav-serve li{
+	float:left;
+	padding: 10px 15px;
+	margin-left: 4px;
+	cursor: pointer;
+}
+.nav-serve li:first-child{
+	margin-left: 0;
+}
+.nav-serve li[state='active'],.nav-serve li:hover{
+	color: #fff;
+    background-color: #d892d6;
+    border-bottom-color: transparent;
+}
+.tabsbody{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	min-height: 300px;
+	display: none;
+}
+.info-long{
+	display: block;
+}
+/*保费表格*/
+table{
+	margin-left: 40px;
+}
+td{
+	border:1px solid;
+	padding: 4px 8px;
+}
+tbody tr:nth-child(even) {
+	background-color: #e5e5e5;
+}
+thead td{
+	background-color: #d892d6;
+	color: #fff;
+	border-color: #333;
+}
+/*服务项导航栏*/
+/*.subnav{
+	background-color: #ff8e6c;
+}
+.subnav-item{
+	color:#fff;
+}
+.subnav-item[aria-selected="true"]:before{
+	background-color: #ff8e6c;
+}
+.subnav-item[aria-selected="true"],.subnav-item:hover{
+	background-color: #fff;
+	color:#ff8e6c;
+}*/
+@media(min-width:1128px){
+	.page-container, .content{
+		width: 1080px;
+	}
+}

@@ -1,0 +1,14 @@
+img.contimg{
+	width: 100%;
+}
+.aid{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.aid a{
+	font-size: 30px;
+	font-weight: 700;
+	font-family: SimSun;
+	color:#30b6a9;
+}

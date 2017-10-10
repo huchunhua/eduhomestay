@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name= "viewport" content='width=device-width,initial-scale=1'>
+  <link rel="shortcut icon" href="http://www.eduhomestay.com/assets/img/logo.png">
+	<title>入住人资料</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/roomcommon.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/student_info.css">
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div id="navbar-top">
+    <nav class="navbar navbar-default navbar-static affix-top" role="navigation">
+        <a class="logo fl" href="./index.html">
+            <img src="./assets/img/logo.png">
+            <p class="logotitle"><span class="tz">Edu</span><span class="tr">Home</span></p>
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right longin-out">
+            <li >
+              <a href="./order.html">我的行程</a>
+            </li>
+            <li>
+            <div class="dropmenu user-dropmenu">
+              <button class="btn login_btn" id="loginBtn" >注册</button>
+            </div>
+            </li>  
+            <li>
+             <button class="btn login_btn" id="landBtn">登录</button>
+            </li>
+          </ul>
+          <ul class="fr longin-show navbar-nav">
+            <li>
+              <a href="" class="icon-btn">
+                <i class="icon phone-icon"></i>
+                <span class="hidden">手机端</span>
+              </a>
+            </li>
+            <li>
+              <div class="dropmenu user-dropmenu land">
+              <!-- 登录后显示头像及下拉菜单 -->
+                <div class="land-user">
+                  <img class="user-photo" src="./assets/img/photo.png">
+                </div>
+                <div class="dropitem-land">
+                  <a href='./order.html'>
+                    <div>
+                      我的行程
+                    </div>
+                  </a>                               
+                  <a href='./collecthost.html'>
+                    <div>
+                      我的收藏
+                    </div>
+                  </a>
+                  <a href="./info.html">
+                    <div>
+                    个人中心
+                    </div>
+                  <a href="">
+                    <div>
+                      退出
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li> 
+          </ul>
+          <div>
+          <div class="dropmenu hostwrap">
+            <a href="./host_info.html">
+              <span class="hoster">成为房东</span>
+            </a> 
+            <div class="dropitem">
+              <a href="./rooms.html">
+                <div>
+                  我的房源
+                </div>
+              </a>
+              <a href="./host_stepone.html">
+                <div>
+                  发布新房源
+                </div>
+              </a>
+              <a href="./scheduled.html">
+                <div>
+                  收到的预订
+                </div>
+              </a>              
+              <a href="./host_info.html">
+                <div>
+                  编辑个人资料
+                </div>
+              </a>                            
+              <a href="./receipt.html">
+                <div>
+                  房东中心
+                </div>
+              </a>                            
+              <a href="./host_stepone.html">
+                <div>
+                  退出登录
+                </div>
+              </a>
+            </div> 
+          </div>
+
+          </div>
+    </nav>
+      <div class="subnav">
+      <div class="page-container">
+        <ul class="subnav-list clearfix">
+          <li>
+            <a href="./order.html" class="subnav-item" >我的行程</a>
+          </li>          
+          <li>
+            <a href="./collecthost.html" class="subnav-item" >我的收藏</a>
+          </li>
+          <li>
+            <a href="./info.html" class="subnav-item"  aria-selected='true'>个人中心</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+	<div class="content">
+
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="sidenav-list">
+          <li class="sidenav-item" ><a href="./info.html">我的资料</a></li>
+          <li class="sidenav-item" aria-selected="true"><a href="./student_info.html">入住人资料</a></li>
+          <li class="sidenav-item"><a href="./safe.html">账号设置</a></li>
+          <li class="sidenav-item"><a href="">我的钱包</a></li>
+          <li class="sidenav-item"><a href="./notification.html">通知</a></li>
+          <li class="sidenav-item"><a href="order_history.html">历史订单</a></li>
+          <div>
+            <a class="btn btn-b">邀请好友</a>
+          </div>
+        </ul>
+      </div>
+      <div class="col-md-9">
+
+        <div class="boxwrap">
+          <div class="boxtitle">
+            常用入住人
+          </div>
+
+          <div class="row box-body">
+
+            <label class='row'>
+              <input type="radio" name="renter" class="col-md-1">
+              <span class='col-md-3'>张三</span>
+              <span class='col-md-3'>本人</span>
+            </label>            
+
+            <label class='row'>
+              <input type="radio" name="renter" class="col-md-1">
+              <span class='col-md-3'>李四</span>
+              <span class='col-md-3'>子女</span>
+            </label>
+
+            <div class="btnrow">
+              <button class="btn btn-b newinfobtn">新建入住人</button>
+            </div>
+
+          </div>
+        </div>
+        <div class=" boxwrap newbox">
+          <div class="boxtitle">
+            新建入住人的资料
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>入住人与您的关系</label>
+              </div>
+              <div class="col-md-9 ">
+                <select id='relat'>
+                  <option>本人</option>
+                  <option>子女</option>
+                  <option>亲属</option>
+                </select>
+              </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>姓氏</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" id='lastname' placeholder="请输入入住人的姓氏">
+              </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>名字</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" id='firstname' placeholder="请输入入住人的名字">
+              </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>性别</label>
+              </div>
+              <div class="col-md-9 sexselect">
+                <label>
+                  <input type="radio" name="sex">男                
+                </label>
+                <label>
+                  <input type="radio" name="sex">女                
+                </label>
+              </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>生日</label>
+              </div>
+              <div class="col-md-9">
+               <select class='year'>
+                 <option>2016年</option>
+                 <option>2015年</option>
+                 <option>2014年</option>
+                 <option>2013年</option>
+                 <option>2012年</option>
+                 <option>2011年</option>
+                 <option>2010年</option>
+                 <option>2009年</option>
+                 <option>2008年</option>
+                 <option>2007年</option>
+                 <option>2006年</option>
+                 <option>2005年</option>
+                 <option>2004年</option>
+                 <option>2003年</option>
+                 <option>2002年</option>
+                 <option>2001年</option>
+                 <option>2000年</option>
+                 <option>1999年</option>
+                 <option>1998年</option>
+               </select>
+               <select>
+                 <option>1月</option>
+                 <option>2月</option>
+                 <option>3月</option>
+                 <option>4月</option>
+                 <option>5月</option>
+                 <option>6月</option>
+                 <option>7月</option>
+                 <option>8月</option>
+                 <option>9月</option>
+                 <option>10月</option>
+                 <option>11月</option>
+                 <option>12月</option>
+               </select>
+               <select>
+                 <option>1</option>
+                 <option>2</option>
+                 <option>3</option>
+                 <option>4</option>
+                 <option>5</option>
+                 <option>6</option>
+                 <option>7</option>
+                 <option>8</option>
+                 <option>9</option>
+                 <option>10</option>
+                 <option>11</option>
+                 <option>12</option>
+                 <option>13</option>
+                 <option>14</option>
+                 <option>15</option>
+               </select>  
+              </div>
+          </div>
+
+          <div class="row box-body">
+            <div class="col-md-3 labeltitle">
+              <label>身份证号</label>
+            </div>
+            <div class="col-md-9">
+              <input type="text" name="" placeholder="请输入入住人身份证号">
+            </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>护照号</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" name="" placeholder="请输入入住人的护照号">
+              </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>电子邮箱</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" name="" placeholder="请输入您的邮箱账号">
+              </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>电话号码</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" name="" placeholder="请输入您的电话号码">
+              </div>
+          </div>
+
+          <div class="row box-body">
+              <div class="col-md-3 labeltitle">
+                <label>自我介绍</label>
+              </div>
+              <div class="col-md-9">
+                <textarea></textarea>
+              </div>
+          </div>
+
+          <div class="row btnrow">
+            <button class="savebtn btn btn-sub">保存</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+	</div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 selector ">
+          <select name="" for="currency-selector" data-reactid="0.1" class="language" onchange="window.location.href=this.options[selectedIndex].value">
+              <option value='zh'>中文</option>
+              <option value='en'>English</option>
+          </select>
+          <div class="clearfix"> 
+            <div class="fl">地&nbsp;&nbsp;址：</div>
+            <div class="fl">
+              <p><a href="">成都市高新区天府大道966号九号楼110室</a></p>
+              <p><a href="">北京市东城区银河SOHO D座50618室</a></p>
+            </div>
+          </div>
+          <p>电&nbsp;&nbsp;话：<a>400-8868-032</a></p>
+          <p>美国分公司电话：<a>（+1）626-373-1206</a></p>
+          <p>美国分公司地址：<a>1619 W Garvey Ave. N Suite 207 West Covina, CA 91790</a></p>
+          <p>邮&nbsp;&nbsp;箱：<a>inquiry@eduhomestay.com</a></p>
+        </div>  
+        <div class="col-md-2 col-lg-2">
+          <p><a href="./companyinfo.html">公司信息</a></p>
+          <p><a href="../EduTransfer_环球学生汇.html#contact">联系我们</a></p>
+          <p><a href="./job.html">工作机会</a></p>
+          <p><a href="">微博与微信</a></p>
+        </div>
+        <div class="col-md-2 col-lg-2">
+          <p><a href="./refund.html">退款政策</a></p>
+          <p><a href="./equity.html">非歧视政策</a></p>
+          <p><a href="./serve_clause.html">服务条款</a></p>
+          <p><a href="./privacy_policy.html">隐私条款</a></p>
+        </div>
+        <div class="col-md-2 col-lg-2">
+          <img src="./assets/img/erweima.jpg">
+          <p>
+            <a href="">环球智汇成都网络科技有限公司</a>
+          </p>
+        </div>        
+      </div>
+      <div class="nav row col-sm-12 col-md-12 col-lg-12">
+        <ul class="clearfix focus">
+          <li>
+            <a class="qq" href="">
+              <i class="qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="wechat" href="">
+              <i class="wechat"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="wechat" href="">
+              <i  class="weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="fb" href="">
+              <i  class="fb"></i>
+            </a>
+          </li>
+        </ul>
+        <p>
+           版权归环球智汇成都网络科技有限公司所有,违者必究   &nbsp;&nbsp; 蜀ICP备16017815号
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  $('button.newinfobtn').click(function(){
+    $('.newbox').show();
+  })
+  $('button.savebtn').click(function(){
+    var lastname = $('.newbox #lastname').val();
+    var firstname = $('.newbox #firstname').val();
+    var name = lastname + firstname;
+    var relat = $('.nexbox #relat').val();
+    $('.newbox').hide();
+  })
+</script>
+</html>

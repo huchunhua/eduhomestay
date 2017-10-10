@@ -1,0 +1,165 @@
+label{
+    font-weight: normal;
+}
+/*步骤左右排版*/
+.content{
+	background-color: #f7f7f7;
+}
+.content form{
+	width: 60%;
+    min-height: 500px;
+    background-color: #fff;
+    padding-left: 10%;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+.titleb{
+	font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.titleb span{
+	font-size: 16px;
+    color: #808080;
+    margin-top: 50px;
+}
+.inputrow{
+	margin-left: 20px;
+}
+.row .inputwrap{
+	float: left;
+    margin-right: 60px;
+    font-size: 16px;
+    color: #333;
+}
+.right img{
+    position: absolute;
+    top:200px;
+}
+/*内容*/
+.daterow{
+    margin-left: 20px;
+}
+input[type='text']{
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 240px;
+}
+input[type='radio']{
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+input.per{
+    width: 40px;
+    border:none;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+input.newp{
+    width: 100px;
+}
+input.mintime{
+    width: 80px;
+    border:none;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    margin-right: 10px;
+}
+.inputtitle{
+    margin-top: 70px;
+    font-size: 20px;
+}
+.inputtitleo{
+    margin-top: 20px;
+}
+select{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+textarea.more{
+    width: 480px;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    margin-left: 20px;
+}
+.stitle{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.stitleo{
+    margin-bottom: 0;
+}
+.spetext{
+    margin-left: 20px;
+}
+.disp{
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.date{
+    float: left;
+}
+.form_datetime{
+    margin-right: 20px;
+}
+input.sinput,select.sinput{
+    width: 140px;
+}
+/*底部按钮*/
+.subwrap{
+    padding-left: 10%;
+    margin-top: 20px;
+}
+.subwrap .return{
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size:18px;
+    color: #808080;
+}
+.btn-sub{
+    margin: 20px auto;
+}
+.subwrap i.return{
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background-image: url('../img/retimg.png');
+    margin:0;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+@media(max-width: 480px){
+    .content form{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .right{
+        display: none;
+    }
+    textarea.more{
+        width: 300px;
+        margin:0;
+    }
+    .row .inputwrap{
+        margin-right: 0;
+    }
+    input.sinput, select.sinput{
+        width: 80px;
+    }
+    .subwrap{
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name= "viewport" content='width=device-width,initial-scale=1'>
+  <link rel="shortcut icon" href="http://www.eduhomestay.com/assets/img/logo.png">
+	<title>联系房东</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/roomcommon.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/contacthost.css">
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="navbar-top">
+    <nav class="navbar navbar-default navbar-static affix-top" role="navigation">
+        <a class="logo fl" href="./index.html">
+            <img src="./assets/img/logo.png">
+            <p class="logotitle"><span class="tz">Edu</span><span class="tr">Home</span></p>
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right longin-out">
+            <li >
+              <a href="./order.html">我的行程</a>
+            </li>
+            <li>
+            <div class="dropmenu user-dropmenu">
+              <button class="btn login_btn" id="loginBtn" >注册</button>
+            </div>
+            </li>  
+            <li>
+             <button class="btn login_btn" id="landBtn">登录</button>
+            </li>
+          </ul>
+          <ul class="fr longin-show navbar-nav">
+            <li>
+              <a href="" class="icon-btn">
+                <i class="icon phone-icon"></i>
+                <span class="hidden">手机端</span>
+              </a>
+            </li>
+            <li>
+              <div class="dropmenu user-dropmenu land">
+              <!-- 登录后显示头像及下拉菜单 -->
+                <div class="land-user">
+                  <img class="user-photo" src="./assets/img/photo.png">
+                </div>
+                <div class="dropitem-land">
+                  <a href='./order.html'>
+                    <div>
+                      我的行程
+                    </div>
+                  </a>                               
+                  <a href='./collecthost.html'>
+                    <div>
+                      我的收藏
+                    </div>
+                  </a>
+                  <a href="./info.html">
+                    <div>
+                    个人中心
+                    </div>
+                  <a href="">
+                    <div>
+                      退出
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li> 
+          </ul>
+          <div>
+          <div class="dropmenu hostwrap">
+            <a href="./host_info.html">
+              <span class="hoster">成为房东</span>
+            </a>             
+            <div class="dropitem">
+              <a href="./rooms.html">
+                <div>
+                  我的房源
+                </div>
+              </a>
+              <a href="./host_stepone.html">
+                <div>
+                  发布新房源
+                </div>
+              </a>
+              <a href="./scheduled.html">
+                <div>
+                  收到的预订
+                </div>
+              </a>              
+              <a href="./host_info.html">
+                <div>
+                  编辑个人资料
+                </div>
+              </a>                            
+              <a href="./receipt.html">
+                <div>
+                  房东中心
+                </div>
+              </a>                            
+              <a href="./host_stepone.html">
+                <div>
+                  退出登录
+                </div>
+              </a>
+            </div> 
+          </div>          
+
+        </div>
+    </nav>
+    <div class="subnav">
+      <div class="page-container">
+        <ul class="subnav-list clearfix">
+          <li>
+            <a href="./order.html" class="subnav-item" aria-selected='true' >我的行程</a>
+          </li>         
+          <li>
+            <a href="./collecthost.html" class="subnav-item" >我的收藏</a>
+          </li>
+          <li>
+            <a href="./info.html" class="subnav-item">个人中心</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content clearfix">
+    <div class="course">
+      <ul class="courseitem clearfix">
+        <li class='consult' state='finish'>
+          <div class="img"></div>
+          <p>咨询房东</p>
+        </li>        
+        <li class="submitorder">
+          <div class="img"></div>
+          <p>提交订单</p>
+        </li>        
+        <li class="pay">
+          <div class="img"></div>
+          <p>支付费用</p>
+        </li>        
+        <li class="finished">
+          <div class="img"></div>
+          <p>订单完成</p>
+        </li>      
+      </ul> 
+      <p class="infotit">入住信息</p>
+      <div class="info">
+        <div>房间名称：Spacious Private Room in West Holly</div>
+        <div>房东名称：Aleks</div>
+        <div class="clearfix">
+          <p class="fl">入住时间段:</p>
+          <div class="inputwrap fl">
+            <input type="" name="" placeholder="入住时间"> 
+            <i></i>           
+          </div>
+          <div class="inputwrap fl">
+            <input type="" name="" placeholder="离开时间">
+            <i></i>            
+          </div>
+          <span>共2天</span>
+        </div>
+        <div>预定价格：￥750</div>
+        <div>入住人数：2位房客</div>
+        <div>
+          入住人信息
+          <select>
+            <option>Alise</option>
+            <option class="new">添加新入住人</option>
+          </select>
+        </div>
+        <div class="clearfix">
+          <p class="fl">咨询房东:</p>
+          <textarea class="fl">            
+          </textarea>
+        <div class="btn submitbtn fr">发送信息</div>
+        </div>
+      </div>   
+    </div>
+    <div class="chatbox">
+      <div class="hostinfo">
+        <img src="./assets/img/rooms/LA/hoster.jpg" class="hostimg">
+        <span class="hostname">Alesks</span>
+      </div>
+      <div class="tip">
+        系统提示：。。。。。。
+      </div>
+      <div class="historybox">
+        <div class="clearfix">
+          <img class="fr" src="./assets/img/rooms/LA/hoster.jpg"></img>
+          <div class="mes fr clearfix">
+            <i class="imgborder fr"></i>
+            <p>用户所提问题</p>
+          </div>
+        </div>        
+        <div class='clearfix getmes'>
+          <img class="fl" src="./assets/img/rooms/LA/hoster.jpg"></img>
+          <div class="mes fl clearfix">
+            <i class="imgborder fl"></i>
+            <p>房主回答</p>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <p>我</p>
+        <div  class="textarea_field">
+          <textarea>         
+          </textarea>
+          <div class="btn">发送</div>          
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="nextwrap clearfix">
+    <a href="./referorder.html"><div class="btn nextbtn fr">下一步</div></a>   
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 selector ">
+          <select name="" for="currency-selector" data-reactid="0.1" class="language" onchange="window.location.href=this.options[selectedIndex].value">
+              <option value='zh'>中文</option>
+              <option value='en'>English</option>
+          </select>
+            <div class="clearfix"> 
+            <div class="fl">地&nbsp;&nbsp;址：</div>
+            <div class="fl">
+              <p><a href="">成都市高新区天府大道966号九号楼110室</a></p>
+              <p><a href="">北京市东城区银河SOHO D座50618室</a></p>
+            </div>
+          </div>
+          <p>电&nbsp;&nbsp;话：<a>400-8868-032</a></p>
+          <p>美国分公司电话：<a>（+1）626-373-1206</a></p>
+          <p>美国分公司地址：<a>1619 W Garvey Ave. N Suite 207 West Covina, CA 91790</a></p>
+          <p>邮&nbsp;&nbsp;箱：<a>inquiry@eduhomestay.com</a></p>
+        </div>  
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./companyinfo.html">公司信息</a></p>
+          <p><a href="../EduTransfer_环球学生汇.html#contact">联系我们</a></p>
+          <p><a href="./job.html">工作机会</a></p>
+          <p><a href="">微博与微信</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./refund.html">退款政策</a></p>
+          <p><a href="./equity.html">非歧视政策</a></p>
+          <p><a href="./serve_clause.html">服务条款</a></p>
+          <p><a href="./privacy_policy.html">隐私条款</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <img src="./assets/img/erweima.jpg">
+          <p>
+            <a href="">环球智汇成都网络科技有限公司</a>
+          </p>
+        </div>        
+      </div>
+      <div class="nav row col-sm-12 col-md-12 col-lg-12">
+        <ul class="clearfix focus">
+          <li>
+            <a class="qq" href="">
+              <i class="qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="wechat"href="">
+              <i class="wechat"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="wechat" href="">
+              <i  class="weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="fb" href="">
+              <i  class="fb"></i>
+            </a>
+          </li>
+        </ul>
+        <p>
+           版权归环球智汇成都网络科技有限公司所有,违者必究   &nbsp;&nbsp; 蜀ICP备16017815号
+        </p>
+      </div>
+    </div>
+  </footer>
+</html>

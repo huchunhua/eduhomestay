@@ -1,0 +1,118 @@
+/*步骤左右排版*/
+.content{
+	background-color: #f7f7f7;
+}
+.content form{
+	width: 60%;
+    min-height: 450px;
+    background-color: #fff;
+    padding-left: 10%;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+.titleb{
+	font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.titleb .steptitle{
+    font-size: 14px;
+    width: 80px;
+    height: 26px;
+    border-radius: 12px;
+    background-color: #c960c0;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+.steptitle span{
+    font-size: 26px;
+    margin-left: 20px;
+    color:#c350bf;
+}
+.inputrow{
+	margin-left: 20px;
+    margin-top: 20px;
+}
+.row .inputwrap{
+	float: left;
+    margin-right: 60px;
+    font-size: 16px;
+    color: #333;
+}
+/*右边图片*/
+.right img{
+    position: absolute;
+    top:300px;
+}
+.right .boxwrap{
+    position: absolute;
+    top:80px;
+    margin-top: 0;
+}
+/*内容*/
+.inputwrap{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+input[name="title"]{
+    width: 420px;
+    margin-left: 20px;
+}
+textarea{
+    width:600px;
+    height: 220px;
+    resize: none;
+    overflow-y: auto;
+    margin-left: 20px;
+    margin-top: 20px; 
+    padding:10px 20px;
+    border-radius: 4px;
+}
+.family textarea{
+    width: 300px;
+}
+/*底部按钮*/
+.subwrap{
+    padding-left: 10%;
+    margin-top: 20px;
+}
+.subwrap .return{
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size:18px;
+    color: #808080;
+}
+.btn-sub{
+    margin: 20px auto;
+}
+.subwrap i.return{
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background-image: url('../img/retimg.png');
+    margin:0;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+@media(max-width: 480px){
+    .content form{
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+    .right{
+        display: none;
+    }
+    textarea{
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+    .subwrap{
+        margin-bottom:30px;
+    }
+}

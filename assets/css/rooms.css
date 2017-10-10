@@ -1,0 +1,52 @@
+/*控制面板通用样式*/
+.content{
+    margin:111px auto 30px;
+    padding: 50px 24px;
+}
+.strong{
+	font-weight: 700;
+}
+.space8{
+	margin-bottom: 48px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*您的房源*/
+p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#navbar-top p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h3{
+	font-size:24px;
+}
+.space-3{
+	margin-bottom: 18px;
+	margin-top: 0;
+}
+/*.noroom{
+	display: none;
+}*/
+.homeimg{
+	width: 100%;
+}
+p.roomtitle{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.btnrow{
+	margin-top:30px;
+}
+@media(max-width: 480px){
+	.content{
+		padding: 20px 24px;
+	}
+}

@@ -1,0 +1,135 @@
+.content{
+	background-color: #f7f7f7;
+}
+label{
+	font-weight: normal;
+}
+.titleb{
+	font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.titleb span{
+	 font-size: 16px;
+    color: #808080;
+    margin-top: 50px;
+}
+.content form{
+	width: 60%;
+	min-height: 860px;
+	background-color:#fff;
+	padding-left: 10%;
+	padding-bottom: 120px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+}
+.itemtitle{
+	font-size:20px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.titleb .steptitle{
+    font-size: 14px;
+    width: 80px;
+    height: 26px;
+    border-radius: 12px;
+    background-color: #c960c0;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+.steptitle span{
+    font-size: 26px;
+    margin-left: 20px;
+    color:#c350bf;
+}
+.introom{
+	margin-top: 70px;
+}
+.right img{
+	margin-top: 40px;
+}
+/*内容*/
+.btn-add{
+    width: 230px;
+    height: 70px;
+    line-height: 70px;
+    padding:0;
+    font-size: 18px;
+    color:#00a699;
+    border-color:#000000;
+}
+.btn-add:hover{
+    color:#000000;
+}
+.roomblock{
+    margin-top: 30px;
+    padding-top:40px;
+    width: 820px;
+    min-height: 200px;
+    border-top:1px solid #004b92;
+    border-bottom:1px solid #004b92;
+}
+.roomname{
+    font-size: 18px;
+    color:#808080;
+}
+.roomprice{
+    font-size: 18px;
+    color:#808080;
+    text-align: right;
+}
+.roomprice .price{
+    font-size: 24px;
+    color:#df0054;
+}
+.editwrap{
+    text-align: right;
+    font-size: 18px;
+    color:#808080;
+}
+.edit{
+    color:#004b92;
+}
+.delete{
+    cursor:pointer;
+}
+/*底部按钮*/
+.subwrap{
+    padding-left: 10%;
+    margin-top: 20px;
+}
+.subwrap .return{
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size:18px;
+    color: #808080;
+}
+.btn-sub{
+    margin: 20px auto;
+}
+.subwrap i.return{
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background-image: url('../img/retimg.png');
+    margin:0;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+@media(max-width: 480px){
+	.right{
+		display: none;
+	}
+	.content form{
+		width: 100%;
+		background-color: #f7f7f7;
+	}
+	input.ps{
+		width: 100%;
+	}
+	.subwrap{
+		margin-bottom: 30px;
+	}
+}

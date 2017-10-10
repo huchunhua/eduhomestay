@@ -1,0 +1,25 @@
+.jobdisc{
+	margin:240px 20% 50px;
+	width: 60%;
+	min-height: 500px;
+	text-align: center;
+}
+.jobdisc p{
+	font-size: 18px;
+	margin:10px;
+	padding: 20px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-align: left;
+}
+.jobdisc span{
+	font-weight: 700;
+	font-size: 20px;
+	margin:10px;
+}
+span a{
+	cursor: pointer;
+}
+span a:hover{
+	color: #bbb;
+}

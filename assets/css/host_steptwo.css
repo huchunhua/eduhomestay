@@ -1,0 +1,147 @@
+label{
+    font-weight: normal;
+}
+/*步骤左右排版*/
+.content{
+	background-color: #f7f7f7;
+}
+.content form{
+	width: 60%;
+    min-height: 900px;
+    background-color: #fff;
+    padding-left: 10%;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+.titleb{
+	font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.titleb .steptitle{
+    font-size: 14px;
+    width: 80px;
+    height: 26px;
+    border-radius: 12px;
+    background-color: #c960c0;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+.steptitle span{
+    font-size: 26px;
+    margin-left: 20px;
+    color:#c350bf;
+}
+.inputrow{
+	margin-left: 20px;
+    margin-top: 20px;
+}
+.row .inputwrap{
+	float: left;
+    margin-right: 83px;
+    font-size: 16px;
+    color: #333;
+}
+/*内容*/
+.inputwrap{
+	font-size:18px;
+	color: #1a1a1a;
+}
+.itemtitle{
+    margin-top: 70px;
+}
+input.ps{
+    height: 20px;
+    width: 470px;
+    overflow-x: scroll;
+}
+select{
+    width: 200px;
+    font-size:16px;
+    color: #4d4d4d;
+}
+textarea.cost{
+    display: none;
+    height: 160px;
+    border-radius: 4px;
+    resize:none;
+    padding:10px;
+}
+.pricetips{
+    display: none;
+    margin-top: 10px;
+}
+.airportcost{
+    width: 210px;
+}
+.costtit{
+    font-size: 16px;
+    font-weight: 700;
+}
+input[name='airport']{
+    margin-right: 6px;
+    margin-left: 16px;
+}
+input[name='airport']:first-child{
+    margin-left: 0;
+}
+input.price{
+    display: none;
+    border:none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    height: auto;
+    width: 100px;
+}
+/*右边说明*/
+.boxt{
+    margin-top: 60px;
+}
+.boxb{
+    margin-top: 140px;
+}
+.right img{
+    position: absolute;
+    top:280px;
+}
+/*底部按钮*/
+.subwrap{
+    padding-left: 10%;
+    margin-top: 20px;
+}
+.subwrap .return{
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size:18px;
+    color: #808080;
+}
+.btn-sub{
+    margin: 20px auto;
+}
+.subwrap i.return{
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background-image: url('../img/retimg.png');
+    margin:0;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+@media(max-width: 480px){
+    .content form{
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+    .right{
+        display: none;
+    }
+    .freeitem{
+        margin-top: 10px;
+    }
+    .subwrap{
+        margin-bottom: 30px;
+    }
+}

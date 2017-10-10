@@ -1,0 +1,700 @@
+.bg_color{
+	background: #f5f5f5;
+}
+.fr{
+    float: right;
+}
+/*锚链接修正*/
+.target-fix{
+    padding-top: 140px !important;
+    margin-top: -140px !important;
+}
+/*顶部banner及导航栏*/
+.school_desc_top{
+    background-color: #fff;
+    border-bottom: 1px solid #cecece;
+    height: 520px;
+}
+.school_desc_banner{
+    width: 100%;
+    height: 450px;
+}
+.school_desc_top img, .school_desc_middle img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/school/harker01.png);
+    background-size: cover;
+}
+.place{
+    position: absolute;
+    z-index: 99;
+    top: 70px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 30px;
+}
+.place p{
+    font-size: 24px;
+    margin-top: 86px;
+    margin-left: 420px;
+}
+.place p:last-child{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.price{
+	margin-top: 20px;
+    height: 33px;
+    line-height: 33px;
+}
+.price span{
+	font-size: 24px;
+    color: #F00;
+    margin-left: 8px;
+}
+.subnav{
+    height: 70px;
+    width: 100%;
+    background-color: #6d635f;
+    z-index: 99;
+}
+.subnav-list>li{
+    height: 70px;
+    float: left;
+    padding-top: 10px;
+    border-left: 1px solid #524a47;
+}
+.subnav-list>li:last-child{
+    border-right: 1px solid #524a47;
+}
+.subnav-list>li:hover{
+    background-color: #524a47;
+}
+.subnav .subnav-item{
+    color:#fff;
+    font-size: 14px;
+}
+.subnav-list .subnav-item{
+    padding: 10px 20px;
+}
+/*行程价格卡*/
+.sidebar{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    width: 260px;
+    z-index: 99;
+}
+.book{
+    background-color: #ff5a5f;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.book>a{
+    display: inline-block;
+    width: 50%;
+    color: #fff;
+}
+.book>a:hover{
+    text-decoration: none;
+}
+.book>a.joinbtn{
+    position: relative;
+}
+.joinbtn i{
+    position: absolute;
+    top:0;
+    display: none;
+}
+.hostinfo{
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+.hostinfo h3,.hostinfo h4{
+    margin:0;
+    padding:0;
+}
+.sidebar .people_desc{
+    width: 100%;
+}
+.people_cirle{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 6px solid #fff;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15);
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+.peop_name{
+    width: 90%;
+    text-align: center;
+    font: normal 16px/20px "Microsoft YaHei";
+    margin: 0 auto;
+    max-height: 40px;
+    overflow: hidden;
+}
+.hostinfo .price{
+    font-size: 18px;
+    color: #ff5a5f;
+}
+.barfoot{
+    margin-top: 20px;
+    background-color: #fb8686;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+.barfoot>div{
+    float: left;
+    width: 50%;
+}
+.barfoot .num{
+    font-size: 24px;
+    color: #ff5a5f;
+}
+/*学校详情*/
+.school_desc_middle{
+	border-bottom: 1px solid #cecece;
+    padding: 20px 0;
+}
+.school_intro_tit{
+	margin-top: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.list_tag{
+	margin: 10px 0;
+    list-style: none;
+}
+.list_tag>li{
+	float: left;
+    padding: 6px 8px;
+    background: #dcedec;
+    color: #007a87;
+    font-size: 14px;
+    margin: 8px 8px 0 0;
+}
+.school_desc_intro{
+	margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.detail{
+	color: #ff5a5f;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+}
+.school_intro{
+	padding: 10px 0;
+    border-top: 1px solid #cecece;
+    margin: 10px 0;
+}
+.school_tit{
+	display: inline-block;
+    width: 30%;
+    font-size: 15px;
+    color: #555;
+}
+/*入学要求*/
+#req{
+    min-height: 200px;
+}
+/*轮播图*/
+.flexslider{
+    margin:40px;
+}
+.flex-direction-nav{
+    position: relative;
+}
+.flexslider img {
+    height: 400px;
+}
+.slides{
+    height: 400px;
+}
+.slides img{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100%;
+}
+.slides .img1{
+    background-image: url(../img/school/harker01.png)
+}
+.slides .img2{
+    background-image: url(../img/school/gld.png)
+}
+/*查看详情图片*/
+.imgdetil_bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+.imgdetil{
+    display: none;
+    position: fixed;
+    z-index: 120;
+    width: 100%;
+    height:100%;
+    line-height: 100%;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.imgdetil img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.imgdetil .close{
+    position: absolute;
+    top:210px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/close.png");
+}
+.pre,.next{
+    display: inline-block;
+    font-size: 50px;
+    color:#fff;
+    background-size: cover;
+    position: absolute;
+    top:50%;
+}
+.pre{
+    left:50px;
+}
+.next{
+    right: 50px;  
+}
+/*视频*/
+.picave{
+    text-align: center;
+}
+video{
+    width: 100%;
+    height: 400px;
+}
+.playbtn{
+    position: absolute;
+    top:160px;
+    left:520px;
+    width: 80px;
+    height: 80px;
+}
+.playbtn img{
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+}
+/*指标排名*/
+.rank{
+	text-align: center;
+}
+.rank>div,.quality>div{
+	height: 200px;
+	position: relative;
+	margin-top: 80px;
+}
+.rank .block,.quality .block{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.bc{
+	background-color: #dcedec;
+	margin: 10px auto;
+	width: 20%;
+	height: 40px;
+	bottom: 0;
+}
+.tuition{
+	height: 40px;
+}
+.area{
+	height: 60px;
+}
+.stu_num{
+	height: 100px;
+}
+.glo_pro{
+	height: 40px;
+}
+/*学校评价*/
+.school_remark{
+	width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    padding: 30px 0 0;
+}
+.remark_tit{
+	width:18%;
+}
+.icon_starno{
+	display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url("../img/star-no.png") no-repeat 0 4px;
+}
+.icon_star{
+    background: url("../img/star.png") no-repeat 0 4px;
+}
+.schoolRemark_child{
+	position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+}
+.none{
+	display:none;
+}
+.schooling{
+	width: 70%;
+}
+.school_list{
+	margin-top: 10px;
+}
+.school_list2>dd{
+	float: left;
+    display: inline-block;
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*评价内容*/
+.remark_desc_area{
+    padding:20px 0 ;
+}
+.remark_left{
+    width: 20%;
+}
+.remark_right{
+    width: 80%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cecece;
+}
+.remark_img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.remark_left>p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+}
+.remark_right>p{
+    line-height: 20px;
+    font-size: 15px;
+}
+.remark_opr{
+    height: 30px;
+    margin-top: 10px;
+}
+.datetime{
+    color: #666;
+    line-height: 30px;
+}
+.click_good{
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height: 25px;
+    padding-left: 40px;
+    background: url("../img/good.png") no-repeat 15px center;
+    border: 1px solid #cecece;
+    color: #333;
+}
+/*地图*/
+.gpsMap {
+    margin-top: 50px;
+    display: flex;
+}
+.gpsMap .mmap,.gpsMap .strmap{
+    height: 460px;
+    font-size: 30px;
+    color: red;
+    background-size:cover;
+}
+.gpsMap .mmap{
+    float:left;
+    flex:1;
+}
+/*街景地图*/
+.gpsMap .strmap{
+    width: 460px;
+    float: right;
+}
+/*交通地图*/
+.gpsMap .tramap{
+    width: 360px;
+}
+/*评论及咨询*/
+.camp_intro{
+    padding: 20px 0;
+    border-top: 1px solid #cecece;
+    margin: 62px 0 20px;
+}
+.camp_tit{
+    display: inline-block;
+    width: 20%;
+    font-size: 15px;
+    color: #555;
+}
+.camp_list>dd{
+    float: left;
+    display: inline-block;
+    width: 30%;
+    line-height: 26px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.camp_list2>dd{
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+}
+.eva-box .camp{
+    margin-left: 200px;
+}
+#rev{
+    background-color: #fff;
+}
+#rev nav{
+    padding-top: 20px;
+    font-size: 18px;
+}
+#rev nav span{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    color:#ff5a5f;
+    border:1px solid;
+}
+#rev nav span:hover{
+    font-weight: 700;
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 11px 30px;
+    border-top:none;
+    border-bottom: none;
+}
+#rev nav span:first-child{
+    border:none;
+    border-left:1px solid;
+    background-color: #ff5a5f;
+    color: #fff;
+    padding:11px 30px;
+}
+#rev img{
+    width: 100%;
+    height: 100%;
+}
+.camp_remark{
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #cecece;
+    padding: 30px 0 0;
+}
+.remark_tit{
+    width: 18%;
+}
+.btn-eva{
+    float:right;
+    margin-bottom: 10px;
+    background-color:#ff5a5f;
+}
+/*咨询框*/
+#refer{
+    display: none;
+}
+.refer-box{
+    display: none;
+}
+.refer-box .name{
+    margin-left: 200px;
+}
+.refer-box textarea{
+    width: 80%;
+    margin-left: 240px;
+    border:1px solid #cecece;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+    margin-top: 10px;
+}
+.refer-box input[type='text']{
+    border-color:#cecece;
+}
+.refer-box .btn-add{
+    float: right;
+}
+/*添加评论栏*/
+.eva-box{
+    display: none;
+}
+.eva-box .hosing{
+    margin-left: 200px;
+}
+.eva-box label{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.eva-box input[type='text']{
+    border-color:#cecece;
+}
+.eva-box textarea{
+    border:1px solid #cecece;
+    resize: none;
+    width: 80%;
+    margin-left: 240px;
+    margin-top: 10px;
+    border-radius: 8px;
+    height: 80px;
+    padding: 10px;
+}
+.eva-box .btn-add{
+    margin-left: 20%;
+    background-color: #ff5a5f;
+    border:none;
+}
+.btn-refer{
+    float:right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ff5a5f;
+}
+b {
+    font: bold 16px/30px "Microsoft YaHei";
+}
+/*.icon_starno{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url("../img/star-no.png") no-repeat 0 4px;
+}
+.icon_star{
+    background: url("../img/star.png") no-repeat 0 4px;    
+}*/
+.campRemark_child{
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+}
+.hosing_list2>dd{
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+}
+.remark_desc_area{
+    padding: 20px 0;
+}
+.remark_left{
+    width: 20%;
+}
+.remark_right{
+    width: 80%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cecece;
+}
+.remark_img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.remark_left>p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+}
+.remark_right>p{
+    line-height: 20px;
+    font-size: 15px;
+}
+.remark_opr{
+    height: 30px;
+    margin-top: 10px;
+}
+.datetime{
+    color: #666;
+    line-height: 30px;
+}
+.click_good{
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height: 25px;
+    padding-left: 40px;
+    background: url("../img/good.png") no-repeat 15px center;
+    border: 1px solid #cecece;
+    color: #333;
+}
+.reply{
+    border:1px solid #cecece;
+    padding:4px 10px;
+    margin-left: 10px;
+}
+@media(max-width: 480px){
+    p a{
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .school_desc_banner,.school_desc_top .slides > li{
+        height: 190px;
+    }
+    .price{
+        height: auto;
+        float: none;
+    }
+    .gpsMap{
+        display: block;
+    }
+    .gpsMap .mmap{
+        width:100%;
+    }
+    .school_list{
+        padding-left: 0;
+    }
+    .school_list>li{
+        width: 100%;
+        margin:10px auto;
+    }
+}

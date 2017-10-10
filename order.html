@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name= "viewport" content='width=device-width,initial-scale=1'>
+  <link rel="shortcut icon" href="http://www.eduhomestay.com/assets/img/logo.png">
+	<title>您的订单</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/roomcommon.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/order.css">
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="navbar-top">
+    <nav class="navbar navbar-default navbar-static affix-top" role="navigation">
+        <a class="logo fl" href="./index.html">
+            <img src="./assets/img/logo.png">
+            <p class="logotitle"><span class="tz">Edu</span><span class="tr">Home</span></p>
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right longin-out">
+            <li >
+              <a href="./order.html">我的行程</a>
+            </li>
+            <li>
+            <div class="dropmenu user-dropmenu">
+              <button class="btn login_btn" id="loginBtn" >注册</button>
+            </div>
+            </li>  
+            <li>
+             <button class="btn login_btn" id="landBtn">登录</button>
+            </li>
+          </ul>
+          <ul class="fr longin-show navbar-nav">
+            <li>
+              <a href="" class="icon-btn">
+                <i class="icon phone-icon"></i>
+                <span class="hidden">手机端</span>
+              </a>
+            </li>
+            <li>
+              <div class="dropmenu user-dropmenu land">
+              <!-- 登录后显示头像及下拉菜单 -->
+                <div class="land-user">
+                  <img class="user-photo" src="./assets/img/photo.png">
+                </div>
+                <div class="dropitem-land">
+                  <a href='./order.html'>
+                    <div>
+                      我的订单
+                    </div>
+                  </a>                               
+                  <a href='./collecthost.html'>
+                    <div>
+                      我的收藏
+                    </div>
+                  </a>
+                  <a href="./info.html">
+                    <div>
+                    个人中心
+                    </div>
+                  <a href="">
+                    <div>
+                      退出
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li> 
+          </ul>
+          <div>
+          <div class="dropmenu hostwrap">
+            <a href="./host_info.html">
+              <span class="hoster">成为房东</span>
+            </a>             
+            <div class="dropitem">
+              <a href="./rooms.html">
+                <div>
+                  我的房源
+                </div>
+              </a>
+              <a href="./host_stepone.html">
+                <div>
+                  发布新房源
+                </div>
+              </a>
+              <a href="./scheduled.html">
+                <div>
+                  收到的预订
+                </div>
+              </a>              
+              <a href="./host_info.html">
+                <div>
+                  编辑个人资料
+                </div>
+              </a>                            
+              <a href="./receipt.html">
+                <div>
+                  房东中心
+                </div>
+              </a>                            
+              <a href="./host_stepone.html">
+                <div>
+                  退出登录
+                </div>
+              </a>
+            </div> 
+          </div>          
+
+        </div>
+    </nav>
+    <div class="subnav">
+      <div class="page-container">
+        <ul class="subnav-list clearfix">
+          <li>
+            <a href="./order.html" class="subnav-item" aria-selected='true' >我的订单</a>
+          </li>         
+          <li>
+            <a href="./collecthost.html" class="subnav-item" >我的收藏</a>
+          </li>
+          <li>
+            <a href="./info.html" class="subnav-item">个人中心</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <!-- <div class="course">
+      <div class="coursetitle">
+        轻松几步，构建自己的海外求学梦!
+        <p class="tips"><i></i>未选择</p>
+        <p class="tips"><i></i>待支付</p>
+        <p class="tips"><i></i>已完成</p>
+      </div>
+      <ul class="courseitem clearfix">
+        <li state="complete">
+          <div class="img"></div>
+          <p>营地/学校</p>
+        </li>      
+        <li class="homestay" state="complete">
+          <div class="img"></div>
+          <p>寄宿家庭</p>
+        </li>      
+        <li class="guard" state="add">
+          <div class="img"></div>
+          <p>监管服务</p>
+        </li>      
+        <li class="insurance" state="no">
+          <div class="img"></div>
+          <p>保险服务</p>
+        </li>      
+        <li class="visa" state="add">
+          <div class="img"></div>
+          <p>签证</p>
+        </li>      
+        <li class="ticket" state="add">
+          <div class="img"></div>
+          <p>机票</p>
+        </li>      
+        <li class="airport" state="add">
+          <div class="img"></div>
+          <p>接送机</p>
+        </li>      
+        <li class="pre" state="no">
+          <div class="img"></div>
+          <p>行前准备</p>
+        </li>
+      </ul>      
+    </div> -->
+
+    <div class="order">
+      <p class="ordertitle">我的订单</p>   
+      <div class="ordertip row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">订单详情</div>
+        <div class="col-md-1">行程类型</div>
+        <div class="col-md-2">出行日期</div>
+        <div class="col-md-1">金额</div>
+        <div class="col-md-1">状态</div>
+        <div class="col-md-1">操作</div>
+      </div> 
+
+      <ul class="orderinfo">
+        <li>
+          <p class="orderhead clearfix">
+            <input type="checkbox" name="">
+            <span class="ordernum">
+              订单编号：
+              <span>123456765</span>
+            </span>            
+            <span class="ordertime">
+              预订时间：
+              <span>2017/1/20</span>
+            </span>
+            <i class="del  glyphicon glyphicon-trash"></i>
+          </p>
+          <div class="orderbody row">
+            <div class="col-md-6 clearfix">
+              <img class="fl" src="./assets/img/insurance.jpg">
+              <p class="fl">短期保险</p>
+            </div>
+            <div class="col-md-1">保险服务</div>
+            <div class="col-md-2">2017/03/09</div>
+            <div class="col-md-1"> $200</div>
+            <div class="col-md-1">
+              <p>未支付</p>
+              <p><a href="">查看详情</a></p>
+            </div>
+            <div class="col-md-1">点评</div>
+          </div>
+        </li>       
+        <li>
+          <p class="orderhead clearfix">
+            <input type="checkbox" name="">
+            <span class="ordernum">
+              订单编号：
+              <span>123456765</span>
+            </span>            
+            <span class="ordertime">
+              预订时间：
+              <span>2017/1/20</span>
+            </span>
+            <i class="del  glyphicon glyphicon-trash"></i>
+          </p>
+          <div class="orderbody row">
+            <div class="col-md-6 clearfix">
+              <img class="fl" src="./assets/img/camp/12.jpg">
+              <p class="fl">旧金山游学体验营</p>
+            </div>
+            <div class="col-md-1">营地</div>
+            <div class="col-md-2">2017/03/09</div>
+            <div class="col-md-1"> $2069</div>
+            <div class="col-md-1">
+              <p>未支付</p>
+              <p><a href="">查看详情</a></p>
+            </div>
+            <div class="col-md-1">点评</div>
+          </div>
+        </li>
+      </ul> 
+
+      <div class="ordertotal row">
+        <div class="col-md-5">合并订单个数:</div>
+        <div class="btn paybtn fr"><a href="">支付</a></div>
+        <div class="col-md-2 fr">总价:</div>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 selector ">
+          <select name="" for="currency-selector" data-reactid="0.1" class="language" onchange="window.location.href=this.options[selectedIndex].value">
+              <option value='zh'>中文</option>
+              <option value='en'>English</option>
+          </select>
+            <div class="clearfix"> 
+            <div class="fl">地&nbsp;&nbsp;址：</div>
+            <div class="fl">
+              <p><a href="">成都市高新区天府大道966号九号楼110室</a></p>
+              <p><a href="">北京市东城区银河SOHO D座50618室</a></p>
+            </div>
+          </div>
+          <p>电&nbsp;&nbsp;话：<a>400-8868-032</a></p>
+          <p>美国分公司电话：<a>（+1）626-373-1206</a></p>
+          <p>美国分公司地址：<a>1619 W Garvey Ave. N Suite 207 West Covina, CA 91790</a></p>
+          <p>邮&nbsp;&nbsp;箱：<a>inquiry@eduhomestay.com</a></p>
+        </div>  
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./companyinfo.html">公司信息</a></p>
+          <p><a href="../EduTransfer_环球学生汇.html#contact">联系我们</a></p>
+          <p><a href="./job.html">工作机会</a></p>
+          <p><a href="">微博与微信</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./refund.html">退款政策</a></p>
+          <p><a href="./equity.html">非歧视政策</a></p>
+          <p><a href="./serve_clause.html">服务条款</a></p>
+          <p><a href="./privacy_policy.html">隐私条款</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <img src="./assets/img/erweima.jpg">
+          <p>
+            <a href="">环球智汇成都网络科技有限公司</a>
+          </p>
+        </div>        
+      </div>
+      <div class="nav row col-sm-12 col-md-12 col-lg-12">
+        <ul class="clearfix focus">
+          <li>
+            <a class="qq" href="">
+              <i class="qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="wechat"href="">
+              <i class="wechat"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="wechat" href="">
+              <i  class="weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="fb" href="">
+              <i  class="fb"></i>
+            </a>
+          </li>
+        </ul>
+        <p>
+           版权归环球智汇成都网络科技有限公司所有,违者必究   &nbsp;&nbsp; 蜀ICP备16017815号
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- 提示框及遮盖层 -->
+<!-- <div class="modal_bg"></div>
+<div class="tip">
+  <h4>是否需要选择<span>营地</span>？</h4>
+  <div class="btn surebtn camp"> <a href="#">是的，需要</a></div>
+  <div class="btn surebtn school"> <a href="./selecter_school.html">学校</a></div>
+  <div class="btn nobtn">暂时不需要，我已经选好了</div>
+</div> -->
+</body>
+<script type="text/javascript">
+  $(function(){
+    var html = '<div class="modal_bg"></div>' +
+                '<div class="tip">' +
+                  '<h4>是否需要选择<span>营地</span>？</h4>' +
+                  '<div class="btn surebtn camp"> <a href="#">是的，需要</a></div>' +
+                  '<div class="btn surebtn school"> <a href="./selecter_school.html">学校</a></div>' +
+                  '<div class="btn nobtn">暂时不需要，我已经选好了</div>' +
+                '</div>';
+    $(".courseitem li p").click(function(){
+      var h = $(this).html();
+      $(this).parent("li").append(html);
+      $('.tip').show();
+      $('.modal_bg').show();
+      $(".tip h4").html("是否需要选择<span>营地</span>？");
+      $(".tip h4 span").text(h);
+      $(".tip .surebtn a").text("是的，需要");
+      $(".tip .nobtn a").text("暂时不需要");
+      $(".tip .nobtn").click(function(){
+        var a = $(this).parent("li");
+        $(this).parents("li").attr("state","complete");
+      });
+      $(".modal_bg,.tip .btn").on('click',function(){
+          $(".modal_bg").remove();
+          $(".tip").remove();
+      });
+      if(h == "营地/学校"){
+        $(".tip .surebtn").css("margin-left","0");
+        $(".tip .surebtn.camp a").text("营地").attr("href","./selecter_camp.html");
+        $(".tip .surebtn.school a").text("学校").attr("href","./selecter_school.html");
+        $(".tip .surebtn.school").show();
+      }
+      else if(h == "寄宿家庭"){
+        $(".tip .surebtn.school").hide();
+        $(".tip .nobtn").text("暂时不需要，我已经有住处");
+        $(".tip .surebtn a").attr("href","./selecter_host.html");
+      }
+      else if(h == "监管服务"){
+        $(".tip .surebtn.school").hide();
+        $(".tip .surebtn a").attr("href","./changer.html");
+      }      
+      else if(h == "保险服务"){
+        $(".tip .surebtn.school").hide();
+        $(".tip .surebtn a").attr("href","./insurance.html");
+      } 
+      else if(h == "签证"){
+        $(".tip .surebtn.school").hide();
+      }   
+      else if(h == "机票"){
+        $(".tip .surebtn.school").hide();
+      } 
+      else if(h == "接送机"){
+        $(".tip .surebtn.school").hide();
+        $(".tip .surebtn a").attr("href","./airport.html");
+      }     
+      else if(h == "行前准备"){
+        $(".tip .surebtn.school").hide();
+        $(".tip h4").text("是否需要查看我的行前准备是否到位？");
+        $(".tip .nobtn").text("暂时不需要，我已经准备完善");
+      }
+      else{
+        $(".tip .nobtn").text("暂时不需要")
+      }
+    });
+    $('.tip .btn,.modal_bg').on('click',function(){
+      $('.modal_bg').hide();
+      $('.tip').hide();
+    });
+  })
+</script>
+</html>

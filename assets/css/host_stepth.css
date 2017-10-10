@@ -1,0 +1,79 @@
+label{
+    font-weight: normal;
+}
+.content{
+	background-color: #f7f7f7;
+}
+.content form{
+	width: 60%;
+    background-color: #fff;
+    padding-left: 10%;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+.titleb{
+	font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.titleb span{
+	font-size: 16px;
+    color: #808080;
+    margin-top: 50px;
+}
+.inputrow{
+	margin-left: 20px;
+    margin-top: 20px;
+}
+.row .inputwrap{
+	float: left;
+    margin-right: 60px;
+    font-size: 16px;
+    color: #333;
+}
+.right img{
+   position: absolute;
+   top:60px;
+}
+.boxwrap{
+    position: absolute;
+    margin-top: 0;
+    top:300px;
+}
+/*底部按钮*/
+.subwrap{
+    padding-left: 10%;
+    margin-top: 20px;
+}
+.subwrap .return{
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size:18px;
+    color: #808080;
+}
+.btn-sub{
+    margin: 20px auto;
+}
+.subwrap i.return{
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background-image: url('../img/retimg.png');
+    margin:0;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+@media(max-width: 480px){
+    .content form{
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+    .right{
+        display: none;
+    }
+    .subwrap{
+        margin-bottom: 30px;
+    }
+}

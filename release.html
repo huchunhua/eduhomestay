@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name= "viewport" content='width=device-width,initial-scale=1'>
+    <link rel="shortcut icon" href="http://www.eduhomestay.com/assets/img/logo.png">
+    <title>EduTransfer(房东发布房源详情预览）</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="flexslider/flexslider.css">
+    <link rel="stylesheet"  href="caroursel/caroursel.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/release.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./caroursel/js/jquery.carousel.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body class="bg_color">
+  <!--menu bar start-->
+  <div id="navbar-top">
+    <nav class="navbar navbar-default navbar-static affix-top" role="navigation">
+        <a class="logo fl" href="./index.html">
+            <img src="./assets/img/logo.png">
+            <p class="logotitle"><span class="tz">Edu</span><span class="tr">Home</span></p>
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right longin-out">
+            <li >
+              <a href="./order.html">我的行程</a>
+            </li>
+            <li>
+            <div class="dropmenu user-dropmenu">
+              <button class="btn login_btn" id="loginBtn" >注册</button>
+            </div>
+            </li>  
+            <li>
+             <button class="btn login_btn" id="landBtn">登录</button>
+            </li>
+          </ul>
+          <ul class="fr longin-show navbar-nav">
+            <li>
+              <a href="" class="icon-btn">
+                <i class="icon phone-icon"></i>
+                <span class="hidden">手机端</span>
+              </a>
+            </li>
+            <li>
+              <div class="dropmenu user-dropmenu land">
+              <!-- 登录后显示头像及下拉菜单 -->
+                <div class="land-user">
+                  <img class="user-photo" src="./assets/img/photo.png"> 
+                </div>
+                <div class="dropitem-land">
+                <a href='./order.html'>
+                  <div>
+                    我的行程
+                  </div>
+                </a>                               
+                <a href='./collecthost.html'>
+                  <div>
+                    我的收藏
+                  </div>
+                </a>
+                <a href="./info.html">
+                  <div>
+                    个人中心
+                  </div>
+                <a href="">
+                  <div>
+                    退出
+                  </div>
+                </a>
+                </div>
+              </div>
+            </li> 
+          </ul>
+          <div>
+          <div class="dropmenu hostwrap">
+            <a href="./host_info.html">
+              <span class="hoster">成为房东</span>
+            </a> 
+            <div class="dropitem">
+              <a href="./rooms.html">
+                <div>
+                  我的房源
+                </div>
+              </a>
+              <a href="./host_stepone.html">
+                <div>
+                  发布新房源
+                </div>
+              </a>
+              <a href="./scheduled.html">
+                <div>
+                  收到的预订
+                </div>
+              </a>              
+              <a href="./host_info.html">
+                <div>
+                  编辑个人资料
+                </div>
+              </a>                            
+              <a href="./receipt.html">
+                <div>
+                  房东中心
+                </div>
+              </a>                            
+              <a href="./host_stepone.html">
+                <div>
+                  退出登录
+                </div>
+              </a>
+            </div> 
+          </div>
+
+          </div>
+    </nav>
+  </div>
+  <!--menu bar end-->
+
+  <div class="home_desc_top">
+    <div class="home_desc_banner">
+      <div class="z"></div>
+      <img>
+      <div class="place">
+        <p>Spacious Private Room in West Holly</p> 
+        <p>Los Angeles, USA</p>     
+      </div>
+    </div>
+    <div class="subnav" id="subnav">
+      <div class="page-container container">
+        <ul class="subnav-list clearfix">
+          <li>
+            <a href="#host" class="subnav-item">寄宿家庭概要</a>
+          </li>                   
+          <li>
+            <a href="#picave" class="subnav-item" >图片及视频</a>
+          </li>
+          <li>
+            <a href="#home" class="subnav-item">房间信息</a>
+          </li>            
+          <li>
+            <a href="#serve" class="subnav-item">提供的服务</a>
+          </li>
+          <li>
+            <a href="#rule" class="subnav-item">房屋守则</a>
+          </li> 
+          <li>
+            <a href="#home" class="subnav-item" >房屋信息</a>
+          </li>          
+          <li>
+            <a href="#location" class="subnav-item" >位置</a>
+          </li>
+          <li>
+            <a href="#rev" class="subnav-item" >评价/咨询</a>
+          </li>         
+          <li>
+            <a href="#simhome" class="subnav-item">相似房源</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <a class="book">预订房间</a>
+      <div class="hostinfo clearfix">
+        <h3>Spacious Private Room in West Holly</h3>
+        <div class="people_desc fl">
+          <a class="people_cirle">
+            <img src="./assets/img/rooms/LA/hoster.jpg" alt=""/>
+          </a>
+          <p class="peop_name">Aleks</p>
+          <span>
+            <i class="icon_star"></i>
+            <i class="icon_star"></i>
+            <i class="icon_star"></i>
+            <i class="icon_star"></i>
+            <i class="icon_star icon_star_half"></i>
+          </span>
+          <a href="" class="contact">联系房东</a>
+        </div>
+      </div>
+      <div class="barfoot clearfix">
+        <div>
+          <h5>回复率</h5>
+          <p class="num">100%</p>
+        </div>        
+        <div>
+          <h5>回复时间</h5>
+          <p>一天以内</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home_desc_middle ">
+    <div>
+      <div class="container">        
+        <h3 class="roomer_intro_tit roomer_intro_tit2 target-fix" id="host" class="target-fix">寄宿家庭概要</h3>
+        <!-- 关于寄宿家庭-->
+        <div class="house_intro clearfix">
+          <span class="fl house_tit">关于寄宿家庭</span>
+          <div class="fl hosing">
+            <p>关于寄宿家庭的介绍</p>
+          </div>
+        </div>        
+        <!-- 家庭成员-->
+        <div class="house_intro clearfix">
+          <span class="fl house_tit">家庭成员</span>
+          <div class="fl hosing">
+            <dl class="hosing_list clearfix">
+              <dd><strong> 父亲</strong></dd>
+              <dd><strong>母亲</strong></dd>
+              <dd><strong>女儿 </strong></dd>
+            </dl>
+          </div>
+        </div>        
+        <!-- 寄宿家庭爱好-->
+        <div class="house_intro clearfix">
+          <span class="fl house_tit">寄宿家庭爱好</span>
+          <div class="fl hosing">
+            <p>家庭爱好介绍</p>
+          </div>
+        </div> 
+
+        <!-- 图片预览 -->
+        <div class="picave target-fix clearfix" id="picave">
+          <div class='picname fl'>
+            <p station='on'>房屋照片</p>
+            <p>餐食照片</p>
+            <p>家庭活动</p>
+          </div>
+          <div class="flexslider fl">
+            <ul class="slides"> 
+              <li>
+                <img class='img1'  />
+              </li>
+              <li>
+                <img class='img2' />
+              </li>
+              <li>
+                <video src="./assets/vedio/movie.mp4" class="contener" id="video">
+                  Your browser does not support the video tag.
+                </video> 
+                <div class="playbtn" onclick="playPause()">
+                  <img src="./assets/img/play.jpg">
+                </div>            
+              </li>
+            </ul>
+            <span class="pre"></span>
+          </div>      
+        </div>
+      </div>
+    </div>
+
+    <div class='welcome'>
+      <div class="container">
+        <span>欢迎</span>
+        学生、游客、情侣
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <h3 class="roomer_intro_tit roomer_intro_tit2 target-fix" id="home">房间信息</h3>
+
+        <div class="boxwrap">
+          <div class="boxtitle">
+            房间一
+          </div>
+
+          <div class="row box-body">
+            <div class="col-md-4">
+              <img class='homeimg' src="./assets/img/rooms/LA/home16.jpg">
+            </div>
+
+            <div class="col-md-8">
+              <p class="roomtitle">双人间</p>
+              <p>留宿2</p>
+              <p>卫生间&nbsp分享</p>
+              <p>1双人Bed</p>
+            </div>
+          </div>
+          <div class="look_more house_more">更多详情</div>
+          <div class="house_none none">
+            <div class="infoblock">
+              <p class='blocktit'>房间设施</p> 
+              <dl class="furniture_list clearfix">
+                <dd>桌子</dd>
+                <dd>壁橱</dd>
+                <dd>空调</dd>
+                <dd>抽屉</dd>
+                <dd>镜子</dd>
+                <dd>灯</dd>
+                <dd>椅子</dd>
+                <dd>沙发</dd>
+              </dl>            
+            </div>            
+
+            <div class="infoblock">
+              <p class='blocktit'>优选出租时间</p> 
+              <p>短暂停留（不到90天）</p>
+            </div> 
+
+            <div class="row">
+              <div class="col-md-4">
+                日历
+              </div>
+              <div class="col-md-8">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <th>一位客人</th>
+                      <th>两位客人</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>每晚价格</td>
+                      <td>￥304</td>
+                      <td>￥365</td>
+                    </tr>                    
+                    <tr>
+                      <td>周租价</td>
+                      <td>¥1,918</td>
+                      <td>¥2,304</td>
+                    </tr>                    
+                    <tr>
+                      <td>月租价</td>
+                      <td>¥7,310</td>
+                      <td>¥8,778</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>           
+          </div>
+
+        </div>        
+      </div>      
+    </div>
+
+    <div class="serve">
+      <div class="container">
+        <h3 class="roomer_intro_tit roomer_intro_tit2 target-fix" id="serve">提供的服务</h3> 
+        <div class="infoblock">
+          <p class='blocktit'>接送</p> 
+          <p>接送机、上下学接送</p>             
+        </div> 
+
+        <div class="infoblock">
+          <p class='blocktit'>餐食</p> 
+          <p>午饭、晚饭</p>             
+        </div>         
+
+        <div class="infoblock">
+          <p class='blocktit'>卫生</p> 
+          <p>由房东打扫</p>             
+        </div>         
+
+        <div class="infoblock">
+          <p class='blocktit'>活动</p> 
+          <p>周末活动、派对</p>             
+        </div>   
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <h3 class="roomer_intro_tit roomer_intro_tit2 target-fix" id="rule">房屋守则</h3>  
+        <p class="husing_cont">禁止吸烟；</p>
+        <p class="husing_cont">不可吸毒；</p>
+        <p class="husing_cont">不通知不可随便带人回家； </p>
+        <p class="husing_cont">公寓里不许穿鞋；</p>      
+      </div>       
+    </div>
+
+    <div class="house">
+      <div class="container">
+        <h3 class="roomer_intro_tit roomer_intro_tit2 target-fix" id="home">房屋信息</h3>  
+        <!-- 房源-->
+        <div class="house_intro clearfix">
+          <span class="fl house_tit">房源</span>
+          <div class="fl hosing">
+            <dl class="hosing_list clearfix">
+              <dd>可住： <strong>1</strong></dd>
+              <dd>退房时间： <strong>11:00</strong></dd>
+              <dd> 卫生间：<strong> 2 (共用) </strong></dd>
+              <dd>是否豢养宠物: <strong> 狗</strong></dd>
+              <dd> 卧室：<strong> 1</strong></dd>
+              <dd> 房源类型： <strong> 公寓</strong></dd>
+              <dd>床位：  <strong>2 </strong></dd>
+              <dd>房间类型：  <strong> 合住房间</strong></dd>
+            </dl>
+            <a href="#home_ruler" class="home_ruler">《房屋守则》</a>
+          </div>
+        </div> 
+        <!-- 房屋设施-->
+        <div class="house_intro clearfix">
+          <span class="fl house_tit">房屋设施</span>
+          <div class="fl hosing">
+            <dl class="hosing_list clearfix">
+              <dd><strong> 花园</strong></dd>
+              <dd><strong>停车场</strong></dd>
+              <dd><strong> 烘干机 </strong></dd>
+              <dd><strong> 网络 </strong></dd>
+              <dd><strong>空调</strong></dd>
+              <dd><strong>厨房</strong></dd>
+            </dl>
+            <dl class="hosing_list facility_none clearfix none">
+              <dd><strong>无线网络</strong></dd>
+              <dd><strong>热水浴缸</strong></dd>
+              <dd><strong>蜂鸣器/无线对讲机</strong></dd>
+            </dl>
+            <a class="look_more facility_more">查看更多</a>
+          </div>
+        </div> 
+        <!-- 周边设施-->
+        <div class="house_intro clearfix">
+          <span class="fl house_tit">周边设施</span>
+          <div class="fl hosing">
+            <dl class="hosing_list clearfix">
+              <dd><strong> 公园</strong></dd>
+              <dd><strong>体育馆</strong></dd>
+              <dd><strong> 学校 </strong></dd>
+              <dd><strong> 医院</strong></dd>
+              <dd><strong>ATM自动取款机</strong></dd>
+              <dd><strong>火车站</strong></dd>
+            </dl>
+            <dl class="hosing_list Surrounding_none clearfix none">
+              <dd><strong>咖啡店</strong></dd>
+              <dd><strong>餐厅</strong></dd>
+              <dd class="underlin"><strong> 超市</strong></dd>
+              <dd><strong>杂货店</strong></dd>
+              <dd class="underlin"><strong>购物中心</strong></dd>
+              <dd><strong>银行</strong></dd>
+              <dd><strong>宾馆</strong></dd>
+              <dd><strong>交通</strong></dd>
+              <dd><strong>公交站</strong></dd>
+              <dd><strong>地铁站</strong></dd>
+              <dd><strong>自行车租车服务</strong></dd>
+              <dd><strong> 租车</strong></dd>
+              <dd><strong> 客车站（灰狗巴士）</strong></dd>
+            </dl>
+            <a class="look_more Surrounding_more">查看更多</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      <!-- 房间设备-->
+      <!-- <div class="house_intro clearfix">
+        <span class="fl house_tit">房间设备</span>
+        <div class="fl hosing">
+          <dl class="hosing_list clearfix">
+            <dd><strong> 桌子</strong></dd>
+            <dd><strong>办公桌</strong></dd>
+            <dd><strong> 衣橱 </strong></dd>
+            <dd><strong> 抽屉 </strong></dd>
+            <dd><strong>电话</strong></dd>
+            <dd><strong>洗衣机</strong></dd>
+          </dl>
+          <dl class="hosing_list equipment_none clearfix none">
+            <dd><strong>床</strong></dd>
+            <dd><strong>灯</strong></dd>
+            <dd><strong>椅子</strong></dd>
+            <dd class="underlin"><strong> 阳台</strong></dd>
+            <dd><strong>镜子</strong></dd>
+            <dd class="underlin"><strong> 沙发</strong></dd>
+            <dd><strong>飘窗</strong></dd>
+            <dd><strong>洗手间</strong></dd>
+            <dd><strong>空调</strong></dd>
+            <dd><strong>床上用品 </strong></dd>
+            <dd><strong>香皂</strong></dd>
+            <dd><strong>厕纸</strong></dd>
+            <dd class="underlin"><strong>吹风机</strong></dd>
+            <dd><strong>洗发水</strong></dd>
+            <dd><strong>生活必需品</strong></dd>
+          </dl>
+          <a class="look_more equipment_more">查看更多</a>
+        </div>
+      </div> -->
+      <!-- 提供的服务-->
+      <!-- <div class="house_intro clearfix">
+        <span class="fl house_tit">提供的服务</span>
+        <div class="fl hosing">
+          <dl class="hosing_list clearfix">
+            <dd><strong>一天两餐</strong></dd>
+            <dd><strong>一天三餐</strong></dd>
+            <dd><strong>上下学接送学生</strong></dd>
+            <dd><strong>医疗救助</strong></dd>
+            <dd><strong>学生家长会</strong></dd>
+            <dd><strong>定期购买生活品</strong></dd>
+            <dd><strong>共度周末</strong></dd>
+            <dd><strong>接送补习班、特长班</strong></dd>
+            <dd><strong>短期旅行</strong></dd>
+          </dl>
+        </div>
+      </div> -->
+      <!-- 描述-->
+      <!-- <div class="house_intro clearfix">
+        <span class="fl house_tit">描述</span>
+        <div class="fl hosing">
+          <strong class="describe_bed">床位安排</strong>
+          <p class="bed_order">
+            <i class="one_bed"></i>
+            <i class="one_bed"></i>
+            <strong>卧室1</strong>
+            <span>2张单人床</span>
+          </p>
+          <strong class="husing_cont_tit">房源</strong>
+          <p class="husing_cont">你会拥有的私人的大床卧室和共享的浴室。房子坐落于西好莱坞的中心，距离超棒的餐厅，公共交通和夜间娱乐场所都很近。包括许可证停车场和封闭停车场。
+          </p>
+          <p class="husing_cont">如果你想让我帮你了解城市和想想要做的事情，我很乐意提供帮助！指引是我喜欢做的事情。如果你想用自己的设备去寻找，我也可以为您提供隐私和独处时间。让我知道我能帮你做些什么。</p>
+          <div class="describe_none none">
+            <p class="husing_cont">靠近公共交通，可通往任何地方。公交车站就在拐角处。</p>
+            <p class="husing_cont">短暂车程可到达比佛利山庄(罗迪欧大道)，圣莫尼卡和威尼斯海滩，马里布，格里菲斯公园天文台，洛杉矶市中心和更多地区！</p>
+            <p class="husing_cont">如果你需要停车，我们会提供给你或者借你一张街道停车的客人停车卡。洛杉矶是一个适宜开车出行的城市，但是如果你需要公共交通，我们家附近就是在最好的乘车位置。你会发现MTA红线巴士，地铁就在步行5分钟内，和一些流行的公交线路到我们的公寓就在几分钟内。再说一次，如果你需要方向，请让我知道。</p>
+            <p class="husing_cont">这里距离洛杉矶机场也是非常近的，如果你需要我可以去接你。</p>
+          </div>
+                <a class="look_more describe_more">查看更多</a>
+        </div>
+      </div> -->
+      <!-- 房屋守则-->
+      <!-- <div class="house_intro clearfix">
+           <a name="home_ruler">
+               <span class="fl house_tit">房屋守则</span>
+               <div class="fl hosing">
+                   <p class="husing_cont">禁止吸烟；</p>
+                   <p class="husing_cont">不可吸毒；</p>
+                   <p class="husing_cont">不通知不可随便带人回家； </p>
+                   <p class="husing_cont">公寓里不许穿鞋；</p>
+                   <div class="ruler_none none">
+                       <p class="husing_cont">保持房间的干净和整洁；</p>
+                       <p class="husing_cont">准时洗碗；</p>
+                       <p class="husing_cont">不许公放吵闹的音乐,不许开聚会；</p>
+                       <p class="husing_cont">尊重家具。 </p>
+                       <p class="husing_cont">取消政策:</p>
+                       <p class="husing_cont">严格政策和支付保证金。</p>
+                       <p class="husing_cont">首先预订之前需先支付寄宿家庭保证金；</p>
+                       <p class="husing_cont">其次用EduPay支付我200美元保证金。</p>
+                       <p class="husing_cont">如果你取消，我们不会退回你200美元的保证金。</p>
+                       <p class="husing_cont">当你来到这里，我们就会退还你的保证金200美元，或者我们可以算作你的房款。</p>
+                       <p class="husing_cont">如果你有什么问题吗？请随时问我，谢谢你的惠顾。</p>
+                       <p class="husing_cont">只允许在户外吸烟。</p>
+                   </div>
+                   <a class="look_more ruler_more">查看更多</a>
+               </div>
+           </a>
+      </div> -->
+      <!-- 安全设施-->
+      <!-- <div class="house_intro clearfix">
+        <span class="fl house_tit">安全设施</span>
+        <div class="fl hosing">
+          <dl class="hosing_list clearfix">
+            <dd>烟雾检测器</dd>
+            <dd> 一氧化碳检测器</dd>
+            <dd> 卧室锁</dd>
+            <dd> 急救箱</dd>
+          </dl>
+        </div>
+      </div> -->
+      <!-- 可租状态-->
+      <!-- <div class="house_intro clearfix">
+        <span class="fl house_tit">可租状态</span>
+        <div class="fl hosing">
+          <dl class="hosing_list clearfix">
+            <dd>最少住宿天数<strong>1晚</strong>。</dd>
+          </dl>
+        </div>
+      </div> -->
+    </div><!-- container-->
+
+    <!-- 地图 -->
+            <div class="gpsMap clearfix row target-fix" id="location">
+              <div class="mmap" id="map">
+              </div>
+               <div class="strmap" id="pano">
+               </div> 
+            </div>
+    <div  id="rev" class="target-fix">
+      <nav class="container">
+        <span value='评论'>评论</span><span value='咨询'>咨询</span>       
+      </nav>
+
+    <!--评论-->
+      <div class="home_remark" id="evaluate">
+      <div class="container">
+          <div class="remark_tit">
+            <b>7条评价</b>
+            <span>
+              <i class="icon_starno icon_star"></i>
+              <i class="icon_starno icon_star"></i>
+              <i class="icon_starno icon_star"></i>
+              <i class="icon_starno icon_star"></i>
+              <i class="icon_starno icon_star"></i>
+            </span>
+            <span class="scale_icon"></span>
+            <div class="homeRemark_child none">
+              <p><b>5星</b><span class="prog prog_org"></span></p>
+              <p><b>4星</b><span class="prog prog_grey"></span></p>
+              <p><b>3星</b><span class="prog prog_grey"></span></p>
+              <p><b>2星</b><span class="prog prog_grey"></span></p>
+              <p><b>1星</b><span class="prog prog_grey"></span></p>
+            </div>
+          </div>
+          <button class="btn btn-eva">添加评价</button>
+          <div class="eva-box clearfix">
+            <div class="house_intro clearfix">
+              <div class="fl hosing">
+              <dl class="hosing_list hosing_list2 clearfix">
+                <dd><strong>准确性</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>位置</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>沟通交流</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>入住</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>清洁度</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+                <dd><strong>性价比</strong></dd>
+                <dd>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                  <i class="icon_starno"></i>
+                </dd>
+              </dl>
+              </div>
+            <label class="name">
+            姓名:
+            <input type="text">              
+            </label>
+            <textarea placeholder="输入评论"></textarea>
+            <button class="btn btn-add">确认添加评价</button>
+            </div>            
+          </div>
+          <!-- 概述-->
+          <div class="house_intro clearfix">
+            <span class="fl house_tit">概述</span>
+            <div class="fl hosing">
+              <dl class="hosing_list hosing_list2 clearfix">
+                <dd><strong>准确性</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>位置</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>沟通交流</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>入住</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>清洁度</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+                <dd><strong>性价比</strong></dd>
+                <dd>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                  <i class="icon_starno icon_star"></i>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <!--  评论内容-->
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+                    <span class="remark_img">
+                        <img src="./assets/img/rooms/Robert.jpg" alt=""/>
+                    </span>
+                    <p>Robert</p>
+            </div>
+            <div class="remark_right fr">
+              <p>Aleks is just one of the nicest guys you'll ever meet. I was a little short on money and he supported me by buying food and just helping me out in general. He wants to make your stay as comfortable as possible and takes every little problem of a visitor very seriously. 
+              The room(s) is/are all very clean and all have a Smart-TV. 
+              There are a lot of shops near by and the area is safe and not too loud. 
+              I really enjoyed my stay and definitely plan on coming back!
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">DECEMBER 2016</span>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Yohei.jpg" alt=""/>
+              </span>
+              <p>Yohei</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                My stay with Max was wonderful so much! He is very friendly person. The room is clean and the location is useful; you can go downtown, hollywood, beachcities.
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">NOVEMBER 2016</span>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Kevin.jpg" alt=""/>
+              </span>
+              <p>Kevin</p>
+            </div>
+            <div class="remark_right fr">
+              <p>First of all Maksim is a very kind, courteous and helpful person. He really takes care over his guest. So the stay with him was very good. The lodging is very beatiful and comfortable. It was a pleasure to met him. So it was a perfect stay.</p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">MAY 2016</span>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Ammar.jpg" alt=""/>
+              </span>
+              <p>Ammar</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                It was just an incredible experience! He was a wonderful guy. (:
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">MAY 2016</span>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl"></div>
+            <div class="remark_right fr"  style="border:none;">
+              <p>该房东的其他房源收到了222条评价。</p>
+              <a class="more_remark">查看其它评价</a>
+            </div>
+          </div>
+      </div>
+      </div>
+    <!-- 咨询 -->
+      <div class="home_remark" id="refer">
+      <div class="container">
+          <div class="remark_tit">
+            <b>3条咨询</b>
+          </div>
+          <button class="btn btn-refer">添加咨询</button>
+          <div class="refer-box clearfix">
+            <div class="house_intro clearfix">
+              <label class="name">
+                姓名:
+                <input type="text">              
+              </label>             
+              <label class="phone">
+               联系方式:
+                <input type="text">              
+              </label>
+              <textarea placeholder="输入咨询内容"></textarea>
+              <button class="btn btn-add">确认发送咨询</button>
+            </div>            
+          </div>
+          <!-- 概述-->
+          <div class="house_intro clearfix">
+          </div>
+          <!--  咨询内容-->
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+                    <span class="remark_img">
+                        <img src="./assets/img/rooms/Robert.jpg" alt=""/>
+                    </span>
+                    <p>Robert</p>
+            </div>
+            <div class="remark_right fr">
+              <p>Aleks is just one of the nicest guys you'll ever meet. I was a little short on money and he supported me by buying food and just helping me out in general. He wants to make your stay as comfortable as possible and takes every little problem of a visitor very seriously. 
+              The room(s) is/are all very clean and all have a Smart-TV. 
+              There are a lot of shops near by and the area is safe and not too loud. 
+              I really enjoyed my stay and definitely plan on coming back!
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">DECEMBER 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Yohei.jpg" alt=""/>
+              </span>
+              <p>Yohei</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                My stay with Max was wonderful so much! He is very friendly person. The room is clean and the location is useful; you can go downtown, hollywood, beachcities.
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">NOVEMBER 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Kevin.jpg" alt=""/>
+              </span>
+              <p>Kevin</p>
+            </div>
+            <div class="remark_right fr">
+              <p>First of all Maksim is a very kind, courteous and helpful person. He really takes care over his guest. So the stay with him was very good. The lodging is very beatiful and comfortable. It was a pleasure to met him. So it was a perfect stay.</p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">MAY 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl">
+              <span class="remark_img">
+                <img src="./assets/img/rooms/Ammar.jpg" alt=""/>
+              </span>
+              <p>Ammar</p>
+            </div>
+            <div class="remark_right fr">
+              <p>
+                It was just an incredible experience! He was a wonderful guy. (:
+              </p>
+              <p class="remark_opr clearfix">
+                <span class="datetime fl">MAY 2016</span>
+                <a class="reply">回复</a>
+                <a class="click_good fr">赞</a>
+              </p>
+            </div>
+          </div>
+          <div class="remark_desc_area clearfix">
+            <div class="remark_left fl"></div>
+            <div class="remark_right fr"  style="border:none;">
+              <p>该房东的其他房源收到了120条咨询。</p>
+              <a class="more_remark">查看其它咨询</a>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>    
+    <!--您的房东-->
+    <div class="yourRoomer target-fix" id="hoster">
+        <div class="container">
+            <p class="yourRoomer_tit">
+                <b>您的房东</b>
+            </p>
+           <div class="clearfix">
+               <div class="people_desc fl">
+                   <a class="people_cirle">
+                       <img src="./assets/img/rooms/la/hoster.jpg" alt=""/>
+                   </a>
+               </div>
+               <div class="home_desc_tit fl">
+                   <h4>Aleks</h4>
+                   <p class="mark_intro">
+                       <span>West Holly</span>·
+                       <span>注册时间：2011年10月</span>
+                   </p>
+                   <p class="husing_cont" style="text-indent:0; margin:10px 0;">
+                      你好，我是马克西姆，我29岁。我出生在东欧的乌克兰，在东欧国家如果你想知道。除了乌克兰语和英语，我还说俄语。我住在住在美国一共13年了，我真的很喜欢这个国家和这里的人们。我刚来美国是住在华盛顿州，并在那里读书，在那之后我搬到了奇妙的加州西好莱坞。目前我是雪松西奈医院的注册护士，但在过去我还做过一点建模的工作。我爱我的工作，因为我要照顾病人并护理他们，直到他们恢复健康。我恪守基督教的价值观和职业礼仪。我很随和，知道如何玩得开心，而且非常善于交际。通过做寄宿家庭，我希望认识来自世界各地的新朋友，向他们展示西好莱坞。我接受任何种族、性别、宗教和取向。而且我特别喜欢亚洲文化和人民。关于我的更多的照片，你可以查看附件链接。谢谢你停下来阅读我的介绍，希望很快见到你！马克西姆
+                   </p>
+                   <dl class="hosing_list clearfix">
+                       <dd>回复率:<strong>100%</strong></dd>
+                       <dd>回复时间:<strong>1小时内</strong></dd>
+                   </dl>
+               </div>
+           </div>
+       </div>
+    </div>
+  </div>
+  <div class="educare">
+    <i></i>
+    <p>联系房东</p>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 selector ">
+          <select name="" for="currency-selector" data-reactid="0.1" class="language" onchange="window.location.href=this.options[selectedIndex].value">
+              <option value='zh'>中文</option>
+              <option value='en'>English</option>
+          </select>
+          <div class="clearfix"> 
+            <div class="fl">地&nbsp;&nbsp;址：</div>
+            <div class="fl">
+              <p><a href="">成都市高新区天府大道966号九号楼110室</a></p>
+              <p><a href="">北京市东城区银河SOHO D座50618室</a></p>
+            </div>
+          </div>
+          <p>电&nbsp;&nbsp;话：<a>400-8868-032</a></p>
+          <p>美国分公司电话：<a>（+1）626-373-1206</a></p>
+          <p>美国分公司地址：<a>1619 W Garvey Ave. N Suite 207 West Covina, CA 91790</a></p>
+          <p>邮&nbsp;&nbsp;箱：<a>inquiry@eduhomestay.com</a></p>
+        </div>  
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./companyinfo.html">公司信息</a></p>
+          <p><a href="../EduTransfer_环球学生汇.html#contact">联系我们</a></p>
+          <p><a href="./job.html">工作机会</a></p>
+          <p><a href="">微博与微信</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./refund.html">退款政策</a></p>
+          <p><a href="./equity.html">非歧视政策</a></p>
+          <p><a href="./serve_clause.html">服务条款</a></p>
+          <p><a href="./privacy_policy.html">隐私条款</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <img src="./assets/img/erweima.jpg">
+          <p>
+            <a href="">环球智汇成都网络科技有限公司</a>
+          </p>
+        </div>        
+      </div>
+      <div class="nav row col-sm-12 col-md-12 col-lg-12">
+        <ul class="clearfix focus">
+          <li>
+            <a class="qq" href="">
+              <i class="qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="wechat"href="">
+              <i class="wechat"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="wechat" href="">
+              <i  class="weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="fb" href="">
+              <i  class="fb"></i>
+            </a>
+          </li>
+        </ul>
+        <p>
+           版权归环球智汇成都网络科技有限公司所有,违者必究   &nbsp;&nbsp; 蜀ICP备16017815号
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div class="imgdetil">
+    <div class="imgdetil_bg"></div>
+    <img >
+    <span class="close"></span>
+    <a class="pre"><</a>
+    <a class="next">></a>
+  </div>
+</body>
+<script src="flexslider/jquery.flexslider-min.js"></script> -->
+<script>
+  Caroursel.init($('.caroursel'))
+</script>
+<script>
+    //房间详情
+    $(".house_more").click(function(){
+        $(".house_none").slideToggle();
+        if($(this).html() == '更多详情'){
+          $(this).html('收起详情')
+        }
+        else{
+          $(this).html('更多详情')        }
+    });
+    //房屋设施
+    $(".facility_more").click(function(){
+        $(".facility_none").slideToggle();
+        $(this).hide();
+    });
+    // 周边设施
+    $(".Surrounding_more").click(function(){
+      $(".Surrounding_none").slideToggle();
+      $(this).hide();
+    });
+ //轮播
+    $(".flexslider").flexslider({
+        animation: "fade",
+        direction: "horizontal",
+        slideshowSpeed: 3000,
+        easing: "swing",
+        slideshow: true,
+        pauseOnHover: false,
+        prevText: "",
+        nextText: ""
+    });
+    // 切换评论与咨询
+    $("#rev nav span").click(function(){
+      $("#rev nav span").css({'font-weight':'300','background-color':'#fff','color':'#c350bf','border-top':'1px solid','border-bottom':'1px solid','padding':'10px 30px'});
+      $(this).css({'font-weight':'700','background-color':'#c350bf','color':'#fff','border-top':'none','border-bottom':'none','padding':'11px 30px'});
+      var val = $(this).attr("value");
+      if(val == "评论"){
+        $("#evaluate").show();
+        $("#refer").hide();
+      }
+      else if(val == '咨询'){
+        $("#refer").show();
+        $("#evaluate").hide();
+      }
+    });
+    // 添加评价
+    $(function(){
+      $(".btn-eva").click(function(){
+        $(".eva-box").slideToggle();
+      })
+      $(".eva-box .btn-add").click(function(){
+        var eva = $(".eva-box textarea").val();
+        $(".eva-box").slideUp();
+      })
+    });
+    //发送咨询
+    $(function(){
+      $(".btn-refer").click(function(){
+        $(".refer-box").slideToggle();
+      })
+      $(".refer-box .btn-add").click(function(){
+        var eva = $(".refer-box textarea").val();
+        $(".refer-box").slideUp();
+      })
+    });
+    // 置顶后固定
+    $(function(){
+      menuFixed("subnav");
+    });
+
+  function menuFixed(id){
+    var obj = document.getElementById(id);
+    var _getHeight = obj.offsetTop;
+    window.onscroll = function(){
+      changePos(id,_getHeight);
+    }
+  }
+  function changePos(id,height){
+    var obj = document.getElementById(id);
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var Top = scrollTop + 70;
+    if(Top < height){
+      obj.style.position = 'relative';
+      obj.style.top = '0';
+    }else{
+      obj.style.position = 'fixed';
+      obj.style.top = '72px';
+    }
+  }
+  // 图片查看
+  $(".slides img").click(function(){
+    var index = $(".slides img").index(this);
+    var url = $(this).css("background-image");
+    var src = url.slice(5,-2);
+    $(".imgdetil img").attr("src",src);
+    $(".imgdetil .pre").click(function(){
+      if(index > 0){
+        index = index -1;
+        var imgpre =$(".slides img")[index]; 
+        var srcpre = $(imgpre).css("background-image").slice(5,-2);
+        $(".imgdetil img").attr("src",srcpre);
+      }
+    })    
+    $(".imgdetil .next").click(function(){
+      if(index  < $(".slides img").length - 1){
+        index = index +1;
+        var imgnext =$(".slides img")[index]; 
+        var srcnext = $(imgnext).css("background-image").slice(5,-2);
+        $(".imgdetil img").attr("src",srcnext);
+      }
+    })
+    $(".imgdetil").show();
+    $(".close,imgdetil_bg").on("click",function(){
+      $(".imgdetil").hide();
+    })
+  })
+</script>
+<script>
+function initialize() {
+  var fenway = {lat: 42.345573, lng: -71.098326};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: fenway,
+    zoom: 14
+  });
+  var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('pano'), {
+        position: fenway,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
+  map.setStreetView(panorama);
+}
+</script>
+<script async defer
+	src="https://www.google.cn/maps/api/js?key=AIzaSyDyAO8hOuxqPdUcgWjofurjpREKN2qEnj8&callback=initialize">
+</script>
+
+</html>

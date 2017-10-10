@@ -1,0 +1,30 @@
+/*控制面板通用样式*/
+.content{
+    margin:111px auto 30px;
+    padding: 50px 24px;
+}
+.strong{
+    font-weight: 700;
+}
+.space8{
+    margin-bottom: 48px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*账号*/
+select{
+	padding:8px 28px 8px 10px;
+}
+@media(max-width: 480px){
+	.content{
+		padding: 20px 10px;
+	}
+	.col-md-1 input{
+		margin-top: 10px;
+		width: 196px;
+	}
+}

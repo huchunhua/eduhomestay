@@ -1,0 +1,95 @@
+/*控制面板通用样式*/
+.content{
+    margin:111px auto 30px;
+    padding: 50px 24px;
+}
+.strong{
+    font-weight: 700;
+}
+.space8{
+    margin-bottom: 48px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+label{
+    font-weight: normal;
+}
+/*资料*/
+.labeltitle{
+	text-align: right;
+	line-height: 40px;
+	height: 40px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+input[type='text'],input[type='checkbox'],select{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding-left:10px;
+}
+input[type='text']{
+    width: 100%;
+}
+select{
+    width:100px;
+}
+.sexselect{
+    height: 40px;
+    line-height: 40px;
+}
+input[type='radio']{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.btnrow{
+    width: 100%;
+    text-align: center;
+}
+.savebtn{
+    font-size: 24px;
+    margin:10px auto;
+    color: #fff;
+}
+.newinfobtn{
+    font-size: 16px;
+    margin:40px 10px 10px;
+}
+.newbox{
+    display: none;
+}
+label.row{
+    width: 100%;
+}
+@media(max-width: 480px){
+    .content{
+        padding: 20px 24px;
+    }
+    .labeltitle{
+      text-align: left;  
+    }
+    select{
+        width: 60px;
+    }
+    select.year{
+        width: 90px;
+    }
+    select:last-child{
+        width: 50px;
+    }
+    #relat{
+        width: 100%;
+    }
+}

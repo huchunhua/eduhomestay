@@ -1,0 +1,81 @@
+/*左右布局*/
+.content{
+	margin: 111px auto 30px;
+    padding: 50px 24px;
+    font-size: 12px;
+}
+.flex{
+	display: flex;
+}
+.flex-1{
+	flex: 1;
+}
+.flex-2{
+	flex: 2;
+}
+.flex-5{
+	flex: 5;
+}
+.flex-6{
+	flex: 6;
+}
+.left{
+	flex: 1;
+}
+.right{
+	width: 980px;
+}
+/*订单*/
+.ordertitle{
+	font-size: 20px;
+}
+.ordertip{
+	margin-top: 10px;
+	padding:8px;
+	background-color: #f5f5f5;
+}
+.orderinfo{
+	margin-top: 30px;
+	padding: 0;
+	list-style: none;
+}
+.orderinfo li{
+	margin-bottom: 20px;
+}
+.orderhead{
+	padding:10px;
+	background-color:#f1e8f0;
+}
+.ordertime{
+	margin-left: 30px;
+}
+.del{
+	float: right;
+	margin-right: 20px;
+}
+.orderbody{
+	padding: 10px;
+	padding-left: 30px;
+	box-shadow: 0 0 2px inset;
+}
+.orderbody img{
+	width: 180px;
+	height: 100px;
+	margin-right: 20px;
+}
+/*合并支付*/
+.ordertotal{
+	padding:10px;
+	background-color: #f1e8f0;
+}
+.ordertotal>div{
+	margin-top: 7px;
+}
+ .ordertotal .paybtn{
+	margin-top: 0;
+	border:none;
+	background-color: #c350bf;
+}
+.paybtn a{
+	color:#fff;
+}

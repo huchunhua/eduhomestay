@@ -1,0 +1,171 @@
+.banner{
+	width: 100%;
+	height: 500px;
+	background-image: url('../img/banner1.png');
+}
+.earning{
+	height: 300px;
+	padding: 60px 100px 90px;
+	text-align: left;
+}
+/*.earcal{
+	width: 480px;
+}*/
+.earnum{
+	width: 250px;
+	height: 90px;
+	line-height: 90px;
+	font-size:18px;
+	font-weight: 700;
+	background-color: #00a699;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	margin-top: 40px;
+}
+.itemline{
+	margin-top: 40px;
+}
+.title{
+	font-size:30px;
+	text-align: center;
+}
+.titlem{
+	font-size: 18px;
+}
+.titlem span{
+	color: #00a699;
+}
+.formtitle{
+	box-shadow: 0 10px 10px #cccccc;
+	height: 70px;
+	line-height: 70px;
+}
+.formtitle>div{
+	box-shadow: 0 -10px 10px #cccccc;
+}
+body{
+	font-family:'Arial Regular';
+}
+/*表单内容*/
+.content{
+	font-size:18px;
+}
+.info{
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	color: #666;
+}
+.itemtitle{
+	color: #333;
+}
+.info ul li{
+	margin-top: 50px;
+}
+.row{
+	margin: 0;
+}
+input[type=text]{
+	height: 50px;
+	border-radius: 4px;
+	border:1px solid #777;
+}
+select{
+	border-color: #777;
+}
+/*头像上传*/
+.photowrap{
+	position: relative;
+}
+input[type='file']{
+	position: absolute;
+	top:0;
+	margin-left: 220px;
+	width: 80px;
+	height: 80px;
+	opacity: 0;
+}
+.photo{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border:1px solid;
+	margin-left: 50px;
+}
+.inputtitle{
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.innputwrap{
+	float: left;
+	margin-right:15px;
+}
+.innputwrap input{
+	width: 100%;
+}
+.firn{
+	width: 170px;
+}
+.mi{
+	width: 100px;
+}
+.lasn{
+	width: 170px;
+}
+.pay_meth{
+	width: 630px;
+}
+textarea.introduction{
+	width: 430px;
+	height: 220px;
+	resize: none;
+	border-radius: 6px;
+	padding:10px; 
+}
+label{
+	font-weight: normal;
+}
+input.idnum{
+	width: 430px;
+}
+.boxwrap{
+	position: absolute;
+	top:170px;
+	right: 10px;
+	width: 400px;
+}
+.pstext{
+	font-size: 14px;
+	color:#333;
+}
+@media(max-width: 480px){
+	.banner{
+		height: 125px;
+	}
+	.earning{
+		height: auto;
+		padding:60px 10px;
+	}
+	.earcal .fr{
+		float: none;
+	}
+	input.idnum{
+		width: auto;
+	}
+	textarea.introduction{
+		width: auto;
+	}
+	.loadbtn{
+		left:40px;
+	}
+	input[type='file']{
+		margin-left:40px;
+	}
+	.earcal{
+		width: 100%;
+	}
+	.pay_meth{
+		width: 100%;
+	}
+}

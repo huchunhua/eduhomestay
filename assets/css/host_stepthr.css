@@ -1,0 +1,374 @@
+/*步骤左右排版*/
+.content{
+	background-color: #f7f7f7;
+}
+.content form{
+	width: 60%;
+    min-height: 500px;
+    background-color: #fff;
+    padding-left: 10%;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+.titleb{
+	font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.titleb span{
+	font-size: 16px;
+    color: #808080;
+    margin-top: 50px;
+}
+.inputrow{
+	margin-left: 20px;
+    margin-top: 20px;
+}
+.row .inputwrap{
+	float: left;
+    margin-right: 60px;
+    font-size: 16px;
+    color: #333;
+}
+/*内容*/
+.titleb{
+	font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.titleb .steptitle{
+	font-size: 14px;
+    width: 80px;
+    height: 26px;
+    border-radius: 12px;
+    background-color: #c960c0;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+.steptitle span{
+	font-size: 26px;
+    margin-left: 20px;
+    color: #c350bf;
+}
+.imgwrap{
+	width: 590px;
+	height: 170px;
+	border:1px solid #000000;
+	border-radius: 6px;
+	position: relative;
+	background-size: 100% 100%;
+}
+#mainimg{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius:6px;
+}
+.mimgwrap{
+	width: 260px;
+	height: 140px;
+	margin-top: 30px;
+}
+.imgwrap .ps{
+	position: absolute;
+	color: #00a699;
+	font-size:18px;
+	top:60px;
+	left:192px;
+	width: 206px;
+	text-align: center;
+}
+.mimgwrap .ps{
+	height: 26px;
+	line-height: 26px;
+	top:57px;
+	left:27px;
+}
+input.mainimg{
+	position: absolute;
+	top:60px;
+	left:192px;
+	width: 206px;
+	height: 50px;
+	opacity: 0;
+	cursor: pointer;
+}
+input.moreimg{
+	position: absolute;
+	width: 206px;
+	height: 26px;
+	top:57px;
+	left:27px;
+	opacity: 0;
+}
+input.desc{
+	width: 590px;
+	height: 30px;
+	border:none;
+	margin-top: 10px;
+}
+.row>div{
+	float: left;
+}
+.deswrap{
+	margin-top: 30px;
+}
+.desrow{
+	margin-bottom: 30px;
+}
+lable.destitle{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 15px;
+}
+input.des{
+	width: 192px;
+	height: 30px;
+	border-radius: 2px;
+}
+.imgs{
+	width: 590px;
+	height: 170px;
+	overflow-x: auto;
+}
+.imgs img{
+	width: 160px;
+	height: 150px;
+	margin:10px;
+}
+.tad{
+	margin-top: 10px;
+	margin-left: 40px;
+	padding-top: 40px;
+}
+.tad p{
+	margin-bottom: 10px;
+}
+.imgwrap img{
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+.imgswrap{
+	margin-top:50px;
+}
+.imgswrap>p{
+	font-size: 20px;
+	color: #00a699;
+}
+.propertyimgs{
+	display: none;
+}
+/*图片上传*/
+.uploadbox{
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top:200px;
+	left:50%;
+	margin-left: -25%;
+	width: 850px;
+	height: 450px;
+	background-color:#fff;
+	border:1px solid;
+}
+.boxtitle{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color:#333;
+	background-color: #cccccc;
+	padding-left: 10px;
+}
+.close{
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.imgbox{
+	position: relative;
+	width: 620px;
+	height:300px;
+	overflow-y: auto;
+}
+.imgblock{
+	position: relative;
+}
+.imgbox .imgexis{
+	width: 130px;
+	height: 80px;
+	margin:10px 10px 20px;
+	border:1px solid #fff;
+}
+.imgblock .rotate{
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	display: none;
+	width: 12px;
+	height: 12px;
+	background-image: url('../img/shuaxin.png')
+}
+.imgblock i.choice{
+	position: absolute;
+	top:30px;
+	right: 45px;
+	display: none;
+	width: 41px;
+	height: 41px;
+	background-image: url('../img/choice.png')
+}
+.imgblock.choice i.choice{
+	display: inline-block;
+}
+.imgblock:hover .rotate{
+	display: inline-block;
+}
+.uploadbtn{
+	position: relative;
+	float:left;
+	width: 130px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border:1px solid #656666;
+	background-image: url('../img/upload.png');
+	background-origin:content-box;
+	background-repeat: no-repeat;
+	padding:0 25px;
+}
+.imgupload{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.preview{
+	margin-top: 10px;
+	margin-right: 20px;
+	width: 160px;
+	height: 340px;
+	border:1px solid #656666;
+}
+.viewtitle{
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color:#333;
+	text-align: center;
+}
+.viewedit{
+	height: 30px;
+	line-height: 30px;
+	background-color: #656666;
+	color:#fff;
+}
+.viewedit>div{
+	width: 50%;
+	text-align: center;
+}
+.preimgs{
+	list-style: none;
+	width: 126px;
+	height: 260px;
+	overflow-y: auto;
+	margin:10px auto;
+	padding: 0;
+}
+.preimgs img{
+	width: 100%;
+	height: 70px;
+}
+.preimgs li{
+	position: relative;
+	margin:10px 0;
+}
+.preimgs .delete{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: inline-block;
+	width: 12px;
+	height: 14px;
+	background-image: url('../img/delete.png');
+	background-repeat: no-repeat;
+}
+.submitwrap{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width: 100%;
+	height: 40px;
+	padding-right: 40px;
+	line-height: 40px;
+	background-color: #cccccc;
+	color:#4c4c4c;
+	font-size: 16px;
+}
+.submitwrap>p{
+	cursor: pointer;
+}
+.surebtn{
+	margin-left: 30px;
+	color:#009987;
+}
+/*右边图片*/
+.right .boxwrap{
+	position: absolute; 
+	top:130px;
+	margin-top: 0;
+}
+.right .boxb{
+	top: 600px;
+}
+.right img{
+	position: absolute;
+	top:90px;
+}
+/*底部按钮*/
+.subwrap{
+    padding-left: 10%;
+    margin-top: 20px;
+}
+.subwrap .return{
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size:18px;
+    color: #808080;
+}
+.btn-sub{
+    margin: 20px auto;
+}
+.subwrap i.return{
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    background-image: url('../img/retimg.png');
+    margin:0;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+@media(max-width: 480px){
+	.content form{
+		width: 100%;
+		background-color: #f7f7f7;
+	}
+	.right{
+		display: none;
+	}
+	.imgwrap,input.desc{
+		width:300px;
+	}
+	.imgwrap .ps,input.mainimg{
+		left:47px;
+	}
+	.subwrap{
+		margin-bottom: 30px;
+	}
+
+}

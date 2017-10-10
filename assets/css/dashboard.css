@@ -1,0 +1,53 @@
+/*控制面板通用样式*/
+.content{
+    margin:111px auto 30px;
+    padding: 50px 24px;
+}
+.strong{
+	font-weight: 700;
+}
+.space8{
+	margin-bottom: 48px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*内容*/
+.module-title{
+	font-size:24px;
+}
+.date-content{
+	border-top: 4px solid #dce0e0;
+    font-size: 15px;
+}
+.counter:before{
+	background-color: #41bfb6;
+	border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 31px;
+    line-height: 31px;
+    position: relative;
+    text-align: center;
+    width: 31px;
+}
+.counter1:before{
+	content: '1'
+}.counter2:before{
+	content: '2'
+}.counter3:before{
+	content: '3'
+}
+.media-body{
+	padding-left:20px;
+	display: table-cell;
+    width: 999999px;
+}
+.subtitle{
+	color: #767676;
+}

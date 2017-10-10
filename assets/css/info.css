@@ -1,0 +1,57 @@
+/*控制面板通用样式*/
+.content{
+    margin:111px auto 30px;
+    padding: 50px 24px;
+}
+.strong{
+    font-weight: 700;
+}
+.space8{
+    margin-bottom: 48px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*资料*/
+label{
+	font-weight: normal;
+}
+.labletitle{
+	text-align: right;
+	line-height: 40px;
+	height: 40px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+input[type='text']{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+.sexrow{
+	height: 40px;
+	line-height: 40px;
+}
+select{
+	width: 100px;
+}
+@media(max-width: 480px){
+	.content{
+		padding: 50px 0;
+	}
+	.labletitle{
+		text-align: left;
+	}
+	.box-body{
+		padding: 10px;
+	}
+	.content select{
+		width: 80px;
+	}
+	.content select:first-child{
+		width: 90px;
+	}
+}

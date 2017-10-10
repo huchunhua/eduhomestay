@@ -1,0 +1,243 @@
+body{
+	background-color: #f0f0f0;
+}
+#navbar-top{
+	height: 112px;
+}
+.content{
+	position: relative;
+	width: 1054px;
+	margin:112px auto 0;
+	padding-top: 60px;
+	border-bottom:1px solid #cccccc;
+}
+.course{
+	width: 944px;
+	margin:0 auto;
+}
+.courseitem{
+	list-style: none;
+    padding: 0;
+    margin: 0 0 80px;
+}
+.courseitem li{
+	float: left;
+    text-align: left;
+    font-size: 16px;
+}
+
+.courseitem li .img{
+	display: inline-block;
+    background-image: url(../img/ordericon.png);
+    width: 236px;
+    height: 73px;
+    background-position-x: 0px;
+    background-position-y: -93px;
+}
+.courseitem li.submitorder .img{
+    background-position-x: -236px;	
+}
+.courseitem li.pay .img{
+    background-position-x: -472px;	
+}
+.courseitem li.finished .img{
+    background-position-x: -708px;	
+}
+.courseitem li p{
+	font-size: 20px;
+	margin-left: 55px;
+}
+.courseitem li[state='finish'] .img{
+    background-position-y: 0px;	
+}
+.courseitem li[state='finish'] p{
+	color:#00a699;
+}
+/*入住信息*/
+.infotit{
+	margin-top: 88px;
+	margin-bottom: 40px;
+	width: 160px;
+	height: 50px;
+	border-radius: 25px 0 25px 0;
+	color:#fff;
+	background-color: #00a699;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+.info{
+	font-size: 16px;
+}
+.info>div{
+	margin-left: 55px;
+	margin-bottom: 30px;
+}
+.info>div:last-child{
+	margin-bottom: 50px;
+	width: 490px;
+}
+.inputwrap{
+	margin:0 4px;
+	position: relative;
+}
+.inputwrap input{
+	height: 30px;
+}
+.inputwrap i{
+	position: absolute;
+	right: 0;
+	top:1px;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-image: url('../img/timeicon.png');
+	background-repeat: no-repeat;
+	background-origin:content-box;
+	padding: 5px;
+	background-color: #95d36f;
+}
+select{
+	width: 140px;
+	height: 30px;
+}
+select .new{
+	background-color: #512b1a;
+	color: #fff;
+}
+textarea{
+	margin-left: 20px;
+	width: 400px;
+	height: 150px;
+	resize: none;
+}
+.submitbtn{
+	margin-top: 30px;
+	width: 104px;
+	background-color: #95d36f;
+	color:#fff;
+}
+/*聊天框*/
+.chatbox{
+	position: absolute;
+	top:260px;
+	right: 0;
+	width: 396px;
+	height: 460px;
+	border:1px solid #808080;
+	font-size: 16px;
+	box-shadow: 6px 6px 6px #ccc;
+}
+.hostinfo{
+	height: 70px;
+	color: #8c7a73;
+	background-color: #fff;
+}
+.hostimg{
+	margin:15px 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+}
+.tip{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+	background-color: #00a699;
+	color:#bed7d4;
+}
+.historybox{
+	height: 220px;
+	overflow-y: scroll;
+	border-bottom: 1px solid #cccccc;
+	background-color: #fff;
+}
+.historybox img{
+	margin-top: 10px;
+	margin-right: 20px;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+}
+.getmes img{
+	margin-left: 20px;
+	margin-right: 0;
+}
+.imgborder{
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 15px;
+	height: 34px;
+	background-image: url('../img/chatr.png');
+}
+.getmes .imgborder{
+	margin-left: 10px;
+	background-image: url('../img/chatl.png');
+}
+.mes>p{
+	margin-top: 10px;
+	margin-right: 25px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 4px;
+	border-radius: 4px 0 0 4px;
+	background-color: #e6e6e6;
+}
+.getmes p{
+	margin-left: 25px;
+}
+/*输入框*/
+.field{
+	height: 140px;
+	padding:10px 10px 20px 20px;
+}
+.field>p{
+	padding-left: 10px;
+}
+.textarea_field{
+	margin-top: 10px;
+	width: 100%;
+	height: 80px;
+	background-color:#fff;
+	position: relative;
+	border-radius: 4px;
+	position: relative;
+}
+.textarea_field textarea{
+	margin-left: 0;
+	width: 100%;
+	height: 100%;
+	border:1px solid #fff;
+	border-radius: 4px;
+}
+.textarea_field .btn{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	background-color: #b6b6b6;
+	color:#fff;
+}
+.textarea_field:before{
+	content: "";
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    bottom: auto;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+    border-top: 0;
+}
+/*下一步*/
+.nextwrap{
+		width: 1054px;
+		margin:10px auto 80px;
+}
+.nextbtn{
+	width: 160px;
+	font-size: 20px;
+	background-color: #00a699;
+	color: #fff;
+	border-radius: 10px;
+}

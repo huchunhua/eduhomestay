@@ -1,0 +1,221 @@
+label{
+	font-weight: normal;
+}
+.titleb{
+	font-size:36px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.titleb .steptitle{
+	font-size: 14px;
+    width: 80px;
+    height: 26px;
+    border-radius: 12px;
+    background-color: #c960c0;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+.steptitle span{
+	font-size: 26px;
+	margin-left: 20px;
+	color:#c350bf;
+}
+.itemwrap{
+	padding-bottom: 70px;
+}
+.itemtitle{
+	font-size:20px;
+	margin-top: 70px;
+}
+/*place*/
+.place{
+	margin-top: 20px;
+}
+.itemline{
+	margin-left: 40px;
+}
+.inputwrap{
+	margin-top:20px;
+}
+.itemline .inputwrap{
+	float: left;
+}
+.inputtitle{
+	font-size:18px;
+}
+.inputwrap input{
+	margin-top: 15px;
+	margin-right: 15px;
+}
+input.street{
+	width: 360px;
+}
+input.apt{
+	width: 220px;
+}
+input.city,input.country{
+	width: 150px;
+}
+input.state{
+	width: 130px;
+}
+input.zip{
+	width: 190px;
+}
+/*map*/
+.map{
+	width: 800px;
+	height: 400px;
+}
+#content{
+    width: 180px;
+    height: 120px;
+    margin:0;
+    padding:0;
+}
+.firstHeading{
+    font-size: 14px;
+    font-weight: normal;
+    color: #0d8f85;
+    margin: 0;
+}
+#bodyContent .fl{
+    width: 50%;
+}
+#bodyContent img{
+    width: 80px;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+#bodyContent  span{
+    color:#e66415;
+    font-weight: 700;
+}
+.pricewrap{
+    margin-top: 20px;
+    padding-left: 14px;
+}
+.pricewrap .inter{
+    width: 65px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    background-color: #808080;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.pricewrap .inter:hover{
+    background-color:  #989292;
+}
+.inter a{
+    color:#fff;
+}
+.maptips{
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+/*type*/
+select.type{
+	width: 420px;
+}
+select.roomkind{
+	width: 200px;
+}
+.roomnumwrap{
+	margin-left: 70px;
+}
+select.roomnum{
+	width: 180px;
+}
+select.stunum{
+	width: 220px;
+}
+.rimgwrap{
+	position: absolute;
+	top:200px;
+	right: 0;
+	width: 600px;
+	z-index: -1;
+}
+.rimg{
+	width: 100%;
+}
+/*周边设施*/
+.inputrow{
+	margin-left: 20px;
+    margin-top: 20px;
+}
+.row .inputwrap{
+	float: left;
+    width: 30%;
+    font-size: 16px;
+}
+.right img{
+   position: absolute;
+   top:60px;
+}
+.boxwrap{
+    position: absolute;
+    margin-top: 0;
+    top:500px;
+}
+/*街景地图*/
+.gpsMap {
+    display: flex;
+    width: 800px;
+}
+.gpsMap .mmap,.gpsMap .strmap{
+    height: 460px;
+/*    background-image: url('../img/rooms/LA/area.png');*/
+    font-size: 30px;
+    color: red;
+    margin-top: 50px;
+}
+.gpsMap .mmap{
+    float:left;
+    flex:1;
+}
+/*街景地图*/
+.gpsMap .strmap{
+    width: 460px;
+    float: right;
+}
+/*交通地图*/
+.gpsMap .tramap{
+    width: 360px;
+}
+/*house facilities*/
+input.ps{
+	height: 20px;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #666;
+    border-radius: 4px;
+}
+label{
+	margin-left: 20px;
+}
+.inputwrap input[type='checkbox']{
+	margin-right: 8px;
+}
+@media(max-width: 480px){
+	select.type{
+		width: 300px;
+	}
+	.itemwrap{
+		padding-bottom: 40px;
+	}
+	.roomnumwrap{
+		margin-left: 40px;
+	}
+	.subwrap{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}

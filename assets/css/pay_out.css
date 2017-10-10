@@ -1,0 +1,41 @@
+/*控制面板通用样式*/
+.content{
+    margin:111px auto 30px;
+    padding: 50px 24px;
+}
+.strong{
+    font-weight: 700;
+}
+.space8{
+    margin-bottom: 48px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*收款方式*/
+label{
+	font-weight: normal;
+}
+.newmeth{
+	font-size: 16px;
+	font-weight: normal;
+	display: none;
+}
+.newmeth p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.newmeth input{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 10px;
+}
+@media(max-width: 480px){
+	.content{
+		padding:20px 24px;
+	}
+}

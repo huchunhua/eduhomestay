@@ -1,0 +1,174 @@
+body{
+	background-color: #f0f0f0;
+}
+#navbar-top{
+	height: 112px;
+}
+.content{
+	position: relative;
+	width: 1054px;
+	margin:112px auto 0;
+	padding-top: 60px;
+	border-bottom:1px solid #cccccc;
+}
+.course{
+	width: 944px;
+	margin:0 auto;
+}
+.courseitem{
+	list-style: none;
+    padding: 0;
+    margin: 0 0 80px;
+}
+.courseitem li{
+	float: left;
+    text-align: left;
+    font-size: 16px;
+}
+
+.courseitem li .img{
+	display: inline-block;
+    background-image: url(../img/ordericon.png);
+    width: 236px;
+    height: 73px;
+    background-position-x: 0px;
+    background-position-y: -93px;
+}
+.courseitem li.submitorder .img{
+    background-position-x: -236px;	
+}
+.courseitem li.pay .img{
+    background-position-x: -472px;	
+}
+.courseitem li.finished .img{
+    background-position-x: -708px;	
+}
+.courseitem li p{
+	font-size: 20px;
+	margin-left: 55px;
+}
+.courseitem li[state='finish'] .img{
+    background-position-y: 0px;	
+}
+.courseitem li[state='finish'] p{
+	color:#00a699;
+}
+/*订单信息*/
+.tit{
+	margin-top: 88px;
+	margin-bottom: 40px;
+	width: 160px;
+	height: 50px;
+	border-radius: 25px 0 25px 0;
+	color:#fff;
+	background-color: #00a699;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+form{
+	margin-bottom: 80px;
+	padding-top: 10px;
+	border-top:1px solid #00a699;
+}
+.blotit{
+	font-size: 20px;
+	font-weight: 700;
+}
+.itemtit{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	background-color: #00a699;
+	border:#00a699;
+	color:#fff;
+	padding-left: 0;
+}
+.itemtit li,.iteminfo li{
+	float: left;
+	width: 160px;
+	text-align: center;
+}
+.itemtit .itemlong,.iteminfo .itemlong{
+	width: 286px;
+}
+.infobox{
+	margin-bottom: 10px;
+	height: 155px;
+	border:1px solid #654232;
+	background-color: #fff;
+}
+.infotit{
+	height: 40px;
+	line-height: 40px;
+	background-color: #cccccc;
+}
+.infotit label{
+	margin-left: 40px;
+	font-size: 14px;
+	color:#000;
+	font-weight: normal;
+}
+.iteminfo{
+	list-style: none;
+	padding-left: 0;
+	padding-top: 20px;
+}
+/*服务订单*/
+.serverorder li{
+	width: 227px;
+}
+.serverorder li.itemlong{
+	width: 299px;
+}
+/*已支付*/
+.price{
+	height: 70px;
+	line-height: 70px;
+	text-align: right;
+	padding-right: 30px;
+	background-color: #dbdbdb;
+}
+.price span{
+	font-size: 22px;
+	color:#ff4400;
+}
+/*房东信息*/
+.hostinfo{
+	margin-top: 70px;
+	padding-top: 10px;
+	border-top:1px solid #00a699;
+}
+.hostinfo p{
+	margin-bottom: 30px;
+}
+.hostinfo .blotit,.hostinfo>div{
+	margin-bottom: 40px;
+}
+.hostinfo img{
+	display: inline-block;
+	width: 160px;
+	height: 160px;
+}
+/*温馨提示*/
+.warmtip{
+	margin-top: 40px;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.warmtip .infotit{
+	padding-left: 40px;
+    font-size: 20px;
+}
+.infotit>i{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    background-image: url(../img/tip.png);
+}
+.warmtip>p{
+	margin: 10px 0;
+	padding-left: 60px;
+}

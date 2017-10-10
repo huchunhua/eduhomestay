@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name= "viewport" content='width=device-width,initial-scale=1'>
+  <link rel="shortcut icon" href="http://www.eduhomestay.com/assets/img/logo.png">
+	<title>接机服务</title>
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/servers.css">
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src='./assets/js/login.js'></script>
+</head>
+<body>
+  <div id="navbar-top">
+    <nav class="navbar navbar-default navbar-static affix-top" role="navigation">
+        <a class="logo fl" href="./index.html">
+            <img src="./assets/img/logo.png">
+            <p class="logotitle"><span class="tz">Edu</span><span class="tr">Home</span></p>
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+        
+          <ul class="nav navbar-nav navbar-right longin-out">
+            <li >
+              <a href="./order.html">我的行程</a>
+            </li>
+            <li>
+            <div class="dropmenu user-dropmenu">
+              <button class="btn login_btn" id="loginBtn" >注册</button>
+            </div>
+            </li>  
+            <li>
+             <button class="btn login_btn" id="landBtn">登录</button>
+            </li>
+          </ul>
+          <ul class="fr longin-show navbar-nav">
+            <li>
+              <a href="" class="icon-btn">
+                <i class="icon phone-icon"></i>
+                <span class="hidden">手机端</span>
+              </a>
+            </li>
+            <li>
+              <div class="dropmenu user-dropmenu land">
+              <!-- 登录后显示头像及下拉菜单 -->
+                <div class="land-user">
+                  <img class="user-photo" src="./assets/img/photo.png">
+                </div>
+                <div class="dropitem-land">
+                <a href='./order.html'>
+                  <div>
+                    我的行程
+                  </div>
+                </a>                               
+                <a href='./collecthost.html'>
+                  <div>
+                    我的收藏
+                  </div>
+                </a>
+                <a href="./info.html">
+                  <div>
+                    个人中心
+                  </div>
+                <a href="">
+                  <div>
+                    退出
+                  </div>
+                </a>
+                </div>
+              </div>
+            </li> 
+          </ul>
+          <div>
+          <div class="dropmenu hostwrap">
+            <a href="./host_info.html">
+              <span class="hoster">成为房东</span>
+            </a> 
+            <div class="dropitem">
+              <a href="./rooms.html">
+                <div>
+                  我的房源
+                </div>
+              </a>
+              <a href="./host_stepone.html">
+                <div>
+                  发布新房源
+                </div>
+              </a>
+              <a href="./scheduled.html">
+                <div>
+                  收到的预订
+                </div>
+              </a>              
+              <a href="./host_info.html">
+                <div>
+                  编辑个人资料
+                </div>
+              </a>                            
+              <a href="./receipt.html">
+                <div>
+                  房东中心
+                </div>
+              </a>                            
+              <a href="./host_stepone.html">
+                <div>
+                  退出登录
+                </div>
+              </a>
+            </div> 
+          </div>
+
+          </div>
+        </div>
+    </nav>
+
+    <div class="subnav">
+      <div class="page-container">
+        <ul class="subnav-list clearfix">
+          <li>
+            <a href="./changer.html" class="subnav-item">监管服务</a>
+          </li>         
+          <li>
+            <a href="./insurance.html" class="subnav-item" >保险服务</a>
+          </li>
+          <li>
+            <a href="./airport.html" class="subnav-item"  aria-selected='true' >接送机</a>
+          </li>
+          <li>
+            <a href="" class="subnav-item">签证</a>
+          </li>
+          <li>
+            <a href="" class="subnav-item" >机票</a>
+          </li>
+          <li>
+            <a href="" class="subnav-item">行前准备</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content container">
+    <div class="item-wrap row">
+      <div class="img insurance"></div>
+      <div class="col-md-7">
+        <h3>接送机服务</h3>
+        <p class='price'>
+          价格：
+          <span>$100</span>  
+        </p>
+        <input type="text" name="" placeholder="请填写航班号">
+        <input type="text" name="" placeholder="请填写起飞日期">
+        <div class="buy">
+          <a class="btn btn-buy" href="">立即购买</a>
+          <a class="btn btn-collect" href="">加入我的行程</a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="nav nav-serve">
+      <li class="qus" state='active'>常见问题</li>
+    </ul>
+
+    <div class="tabsbody info-long">
+    </div>    
+
+
+    <div class="tabsbody qus">
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 selector ">
+          <select name="" for="currency-selector" data-reactid="0.1" class="language" onchange="window.location.href=this.options[selectedIndex].value">
+              <option value='zh'>中文</option>
+              <option value='en'>English</option>
+          </select>
+            <div class="clearfix"> 
+              <div class="fl">地&nbsp;&nbsp;址：</div>
+              <div class="fl">
+                <p><a href="">成都市高新区天府大道966号九号楼110室</a></p>
+                <p><a href="">北京市东城区银河SOHO D座50618室</a></p>
+              </div>
+            </div>
+            <p>电&nbsp;&nbsp;话：<a>400-8868-032</a></p>
+            <p>美国分公司电话：<a>（+1）626-373-1206</a></p>
+            <p>美国分公司地址：<a>1619 W Garvey Ave. N Suite 207 West Covina, CA 91790</a></p>
+            <p>邮&nbsp;&nbsp;箱：<a>inquiry@eduhomestay.com</a></p>
+        </div>  
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./companyinfo.html">公司信息</a></p>
+          <p><a href="../EduTransfer_环球学生汇.html#contact">联系我们</a></p>
+          <p><a href="./job.html">工作机会</a></p>
+          <p><a href="">微博与微信</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p><a href="./refund.html">退款政策</a></p>
+          <p><a href="./equity.html">非歧视政策</a></p>
+          <p><a href="./serve_clause.html">服务条款</a></p>
+          <p><a href="./privacy_policy.html">隐私条款</a></p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <img src="./assets/img/erweima.jpg">
+          <p>
+            <a href="">环球智汇成都网络科技有限公司</a>
+          </p>
+        </div>        
+      </div>
+      <div class="nav row col-sm-12 col-md-12 col-lg-12">
+        <ul class="clearfix focus">
+          <li>
+            <a class="qq" href="">
+              <i class="qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="wechat"href="">
+              <i class="wechat"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="wechat" href="">
+              <i  class="weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="fb" href="">
+              <i  class="fb"></i>
+            </a>
+          </li>
+        </ul>
+        <p>
+           版权归环球智汇成都网络科技有限公司所有,违者必究   &nbsp;&nbsp; 蜀ICP备16017815号
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 模态框（Modal） -->
+<div class="modal_bg" id="myModal" style="display:none;"></div><!-- /.modal -->
+  <div class="dialog dialog_cont" id="login_modal" style="display:none;">
+       <a class="btn wexin_btn"><i class="icon icon-wechat"></i>通过微信登录     </a> 
+       <p class="or_line">
+         <span class="or_txt">或</span>
+       </p>
+        <form id="loginform" class="form-vertical" action="http://edutransfer.com.cn/login.do" method="post">
+      <p class="inpts">
+               <input type="text" class="tel" placeholder="请输入用户名" name="phone" onblur="promtTel()">
+            </p>
+            <p class="inpts">
+               <input type="password" class="pwd" placeholder="密码" name="password" onblur="promtPwd()">
+            </p> 
+            <p class="form_txt">
+                 <a>改用电话号码</a> . <a id="fogtPwd_btn">忘记密码？</a>                                    
+            </p> 
+             <p class="form_btns">
+               <input type="submit" class="login_btn" value="登录">
+            </p> 
+            <p class="reg_txt">
+               还没有账号??<input type="button" class="reg_btn" value="注册" id="regsiter_btn">                         
+            </p>   
+        </form>
+  </div><!-- /dialog -->
+    
+  <div class="forget_pwd dialog_cont" id="aginresetPwd" style="display:none;">
+      <p class="dialog_hd">重置密码</p> 
+      <div class="forget_cont">
+         <p class="reg_promt">请输入与您的帐号关联的邮箱，我们将通过电子邮件给您发送重置密码的链接。</p>
+          <form id="" class="form-vertical" action="http://edutransfer.com.cn/index.jsp" method="post">
+      <p class="inpts">
+               <input type="text" class="email" placeholder="电子邮件" name="email" onblur="promtEmail()">
+            </p>
+             <p class="form_txt" style="border:none;">
+                 <a>改用电话号码</a>                              
+             </p>
+             <p class="reset_btn">
+                <input type="button" class="login_btn" value="发送重置链接">
+            </p> 
+        </form>
+      </div>
+  </div><!-- /dialog -->
+   
+  <div class="dialog dialog_cont" id="telReg" style="display:none;">
+       <h4>用电话号码注册</h4>
+       <p class="form_txt">
+          <a id='emlReg'>改用邮箱</a> . <a>使用其他方式</a>                                    
+       </p>
+        <form id="insertUser" class="form-vertical" action="http://edutransfer.com.cn/insertUser.do" method="post">
+               <p class="put_tel_p">
+                  <select class="tel_seleName" id="phonetitle" name="phonetitle">
+                    <option value="+86">中国(+86)</option>
+                    <option value="+1">美国(+1)</option>
+                 </select>
+                 <input type="text" class="tel" placeholder="电话号码" name="phone" id="qwqwqw">
+                  <a class="telM" id="createStr" href="http://edutransfer.com.cn/index.jsp#">获取手机验证码</a>
+               </p>
+              
+               <input type="text" class="inpt_tel" placeholder="请输入手机验证码" name="phoneVa">
+               <input type="password" class="reg_pwd" placeholder="密码" name="password">
+               <input type="password" class="reg_pwd agin_pwd" placeholder="确认密码" name="agpassword">
+               <p class="reg_login_btn">
+                  <input type="submit" class="login_btn" value="注册" id="reg_login">
+              </p>
+        </form>
+  </div><!-- /dialog -->
+
+    <div class="dialog dialog_cont" id="emailReg" style="display:none;">
+       <h4>用邮箱注册</h4>
+       <p class="form_txt">
+          <a id='phReg'>改用电话号码</a> . <a>使用其他方式</a>                                    
+       </p>
+        <form id="insertUser" class="form-vertical" action="http://edutransfer.com.cn/insertUser.do" method="post">
+               <p class="put_tel_p">
+                 <input type="text" class="inpt_tel" placeholder="请输入邮箱号" >
+               </p>
+               <input type="password" class="reg_pwd" placeholder="密码" name="password">
+               <input type="password" class="reg_pwd agin_pwd" placeholder="确认密码" name="agpassword">
+               <p class="reg_login_btn">
+                  <input type="submit" class="login_btn" value="注册" id="reg_login">
+              </p>
+        </form>
+   </div><!-- /dialog -->
+</body>
+<script>
+// 服务信息版块显示切换
+  $(function(){
+    $(".nav-serve li").click(function(){
+      $(".nav-serve li").attr("state","");
+      $(this).attr("state",'active');
+      $(".tabsbody").hide();
+      if($(".nav-serve li[state='active']").attr('class')== 'info-long'){
+        $(".tabsbody").hide();
+        $(".tabsbody.info-long").show();
+      }      
+      else if($(".nav-serve li[state='active']").attr('class')== 'info-short'){
+        $(".tabsbody").hide();
+        $(".tabsbody.info-short").show();
+      }
+      else if($(".nav-serve li[state='active']").attr('class') == 'qus'){
+        $(".tabsbody.qus").show();
+      }
+    })
+  })
+// 价格
+$(function(){
+  $("select").change(function(){
+    var day = $("select").val();
+    console.log(day);
+    if(day == '1-5天'){
+      $(".price span").text("￥42");      
+    }
+    else if(day == '6-10天'){
+      $(".price span").text("￥52")
+    }    
+    else if(day == '11-15天'){
+      $(".price span").text("￥64")
+    }    
+    else if(day == '12-20天'){
+      $(".price span").text("￥75")
+    }    
+    else if(day == '21-28天'){
+      $(".price span").text("￥120")
+    }
+  })
+})
+</script>
+</html>

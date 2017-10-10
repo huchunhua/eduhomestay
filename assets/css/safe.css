@@ -1,0 +1,30 @@
+/*控制面板通用样式*/
+.content{
+    margin:111px auto 30px;
+    padding: 50px 24px;
+}
+/*密码安全*/
+label{
+	font-weight: normal;
+}
+.labelwrap{
+	text-align: right;
+	height: 40px;
+	line-height: 40px;
+}
+input[type='text']{
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+}
+.box-body .row{
+	margin-bottom: 20px;
+}
+@media(max-width: 480px){
+	.content{
+		padding:20px 24px;
+	}
+	.labelwrap{
+		text-align: left;
+	}
+}

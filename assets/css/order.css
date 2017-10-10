@@ -1,0 +1,201 @@
+label{
+	font-weight: normal;
+}
+.content{
+	width:1170px;
+	margin:140px auto;
+	min-height: 400px;
+	position: relative;
+}
+/*行程*/
+.coursetitle{
+	font-size: 18px;
+	color:#333;
+	margin-bottom: 50px;
+}
+.coursetitle .tips{
+	float: right;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.tips i{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color:#ed8aea;
+	margin-right: 8px;
+}
+.tips:first-child i{
+	background-color: #aca3a1;
+}
+.tips:last-child i{
+	background-color: #c350bf;
+}
+.courseitem{
+	list-style: none;
+	padding:0;
+	margin:0 0 80px;
+}
+.courseitem li{
+	float: left;
+	text-align: left;
+	font-size: 16px;
+	color:#fff;
+}
+.courseitem p{
+	color: #aca3a1;
+	margin-top: 16px;
+	font-weight: 700;
+	cursor:pointer;
+}
+.visa p,.ticket p{
+	text-indent: 1em;
+}
+.courseitem li[state='add'] p{
+	color: #ed8aea;
+}
+.courseitem li[state='complete'] p{
+	color: #c350bf;
+}
+.courseitem li:first-child p{
+	margin-left: 50px;
+}
+.courseitem li .img{
+	display: inline-block;
+	background-image: url("../img/courseicon.png");
+	margin-top: 10px;
+	width: 145px;
+	height: 60px;
+	background-position-x:0px;
+	background-position-y:0px;
+}
+.courseitem li[state='complete'] .img{
+	background-position-y:0px;
+}
+.courseitem li[state='add'] .img{
+	background-position-y:-70px;
+}
+.courseitem li[state='no'] .img{
+	background-position-y:-140px;
+}
+.courseitem li:first-child .img{
+	width:194px;
+}
+.courseitem li.homestay .img{
+	background-position-x:-214px;
+}
+.courseitem li.guard .img{
+	background-position-x:-379px;
+}
+.courseitem li.insurance .img{
+	background-position-x:-544px;
+}
+.courseitem li.visa .img{
+	background-position-x:-709px;
+}
+.courseitem li.ticket .img{
+	background-position-x:-874px;
+}
+.courseitem li.airport .img{
+	background-position-x:-1039px;
+}
+.courseitem li.pre .img{
+	width: 103px;
+	background-position-x:-1204px;
+}
+/*行程提示*/
+.modal_bg{
+	display: none;
+}
+.tip{
+	position: fixed;
+    width: 460px;
+    height: 200px;
+    top: 59%;
+    left: 50%;
+    margin:-300px 0 0 -300px;
+    z-index: 110;
+    background-color: #fff;
+    background: #fff;
+    padding: 30px 20px;
+    margin: -300px 0 0 -300px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 100;
+    display: none;
+}
+.tip h4{
+	text-align: center;
+	color:#2d2d2d;
+}
+.tip .btn{
+	margin-top: 60px;
+	background-color: #797979;
+	color: #fff;
+	float:right;
+	margin-right:20px;
+}
+.tip .btn.surebtn{
+	background-color: #5ac9ed;
+	float:left;
+	margin-left: 20px;
+}
+.tip .surebtn.school{
+	display: none;
+}
+/*订单*/
+.ordertitle{
+	font-size: 20px;
+}
+.ordertip{
+	margin-top: 10px;
+	padding:8px;
+	background-color: #f5f5f5;
+}
+.orderinfo{
+	margin-top: 30px;
+	padding: 0;
+	list-style: none;
+}
+.orderinfo li{
+	margin-bottom: 20px;
+}
+.orderhead{
+	padding:10px;
+	background-color:#f1e8f0;
+}
+.ordertime{
+	margin-left: 30px;
+}
+.del{
+	float: right;
+	margin-right: 20px;
+}
+.orderbody{
+	padding: 10px;
+	padding-left: 30px;
+	box-shadow: 0 0 2px inset;
+}
+.orderbody img{
+	width: 180px;
+	height: 100px;
+	margin-right: 20px;
+}
+/*合并支付*/
+.ordertotal{
+	padding:10px;
+	background-color: #f1e8f0;
+}
+.ordertotal>div{
+	margin-top: 7px;
+}
+ .ordertotal .paybtn{
+	margin-top: 0;
+	border:none;
+	background-color: #c350bf;
+}
+.paybtn a{
+	color:#fff;
+}
